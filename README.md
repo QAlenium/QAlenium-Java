@@ -1,12 +1,12 @@
 # Framework de automação de testes em Java
 A powerful & easy to use Test Automation Framework
 
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=alm-integration-java&metric=alert_status)](https://sonarcloud.io/dashboard?id=alm-integration-java)
-[![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=alm-integration-java&metric=ncloc)](https://sonarcloud.io/dashboard?id=alm-integration-java)
-[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=alm-integration-java&metric=sqale_rating)](https://sonarcloud.io/dashboard?id=alm-integration-java)
-[![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=alm-integration-java&metric=reliability_rating)](https://sonarcloud.io/dashboard?id=alm-integration-java)
-[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=alm-integration-java&metric=security_rating)](https://sonarcloud.io/dashboard?id=alm-integration-java)
-![CircleCI](https://img.shields.io/circleci/build/github/kaapiel/ALMIntegration-Java/master)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=QAlenium_QAlenium-Java&metric=alert_status)](https://sonarcloud.io/dashboard?id=QAlenium_QAlenium-Java)
+[![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=QAlenium_QAlenium-Java&metric=ncloc)](https://sonarcloud.io/dashboard?id=QAlenium_QAlenium-Java)
+[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=QAlenium_QAlenium-Java&metric=sqale_rating)](https://sonarcloud.io/dashboard?id=QAlenium_QAlenium-Java)
+[![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=QAlenium_QAlenium-Java&metric=reliability_rating)](https://sonarcloud.io/dashboard?id=QAlenium_QAlenium-Java)
+[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=QAlenium_QAlenium-Java&metric=security_rating)](https://sonarcloud.io/dashboard?id=QAlenium_QAlenium-Java)
+![CircleCI](https://img.shields.io/circleci/build/github/QAlenium/QAlenium-Java/master)
 
 ## Table of Contents
 1. [Quick Start](#quick-start)
