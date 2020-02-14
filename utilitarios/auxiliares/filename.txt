@@ -1,0 +1,1908 @@
+{
+  "entities": [
+    {
+      "Fields": [
+        {
+          "Name": "component-data",
+          "values": [
+            {}
+          ]
+        },
+        {
+          "Name": "has-picture",
+          "values": [
+            {
+              "value": "N"
+            }
+          ]
+        },
+        {
+          "Name": "bpt-path",
+          "values": [
+            {}
+          ]
+        },
+        {
+          "Name": "desstep-id",
+          "values": [
+            {
+              "value": "4471"
+            }
+          ]
+        },
+        {
+          "Name": "comp-status",
+          "values": [
+            {}
+          ]
+        },
+        {
+          "Name": "execution-date",
+          "values": [
+            {
+              "value": "2017-02-17"
+            }
+          ]
+        },
+        {
+          "Name": "rel-obj-id",
+          "values": []
+        },
+        {
+          "Name": "id",
+          "values": [
+            {
+              "value": "21288"
+            }
+          ]
+        },
+        {
+          "Name": "level",
+          "values": []
+        },
+        {
+          "Name": "description",
+          "values": [
+            {
+              "value": " \n \nAcessar o link \u003c\u003chttp://10.64.174.14:8801/crd-teste/#/\u003e\u003e do sistema - CRD - Teste-\n \n"
+            }
+          ]
+        },
+        {
+          "Name": "bpt-facet-type",
+          "values": [
+            {}
+          ]
+        },
+        {
+          "Name": "name",
+          "values": [
+            {
+              "value": "Acessar CRD-TimeBox"
+            }
+          ]
+        },
+        {
+          "Name": "has-linkage",
+          "values": [
+            {
+              "value": "N"
+            }
+          ]
+        },
+        {
+          "Name": "path",
+          "values": [
+            {}
+          ]
+        },
+        {
+          "Name": "step-order",
+          "values": [
+            {
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "Name": "obj-id",
+          "values": []
+        },
+        {
+          "Name": "status",
+          "values": [
+            {
+              "value": "No Run"
+            }
+          ]
+        },
+        {
+          "Name": "attachment",
+          "values": [
+            {}
+          ]
+        },
+        {
+          "Name": "line-no",
+          "values": []
+        },
+        {
+          "Name": "test-id",
+          "values": [
+            {
+              "value": "115"
+            }
+          ]
+        },
+        {
+          "Name": "extended-reference",
+          "values": [
+            {}
+          ]
+        },
+        {
+          "Name": "parent-id",
+          "values": [
+            {
+              "value": "2027"
+            }
+          ]
+        },
+        {
+          "Name": "expected",
+          "values": [
+            {
+              "value": " \n \nSistema -CRD - Credenciamento- acessado com sucesso.\n \n"
+            }
+          ]
+        },
+        {
+          "Name": "bpta-condition",
+          "values": [
+            {}
+          ]
+        },
+        {
+          "Name": "tree-parent-id",
+          "values": []
+        },
+        {
+          "Name": "actual",
+          "values": [
+            {}
+          ]
+        },
+        {
+          "Name": "execution-time",
+          "values": [
+            {
+              "value": "07:26:24"
+            }
+          ]
+        },
+        {
+          "Name": "comp-subtype-name",
+          "values": [
+            {}
+          ]
+        }
+      ],
+      "Type": "run-step"
+    },
+    {
+      "Fields": [
+        {
+          "Name": "component-data",
+          "values": [
+            {}
+          ]
+        },
+        {
+          "Name": "has-picture",
+          "values": [
+            {
+              "value": "N"
+            }
+          ]
+        },
+        {
+          "Name": "bpt-path",
+          "values": [
+            {}
+          ]
+        },
+        {
+          "Name": "desstep-id",
+          "values": [
+            {
+              "value": "2749"
+            }
+          ]
+        },
+        {
+          "Name": "comp-status",
+          "values": [
+            {}
+          ]
+        },
+        {
+          "Name": "execution-date",
+          "values": [
+            {
+              "value": "2017-02-17"
+            }
+          ]
+        },
+        {
+          "Name": "rel-obj-id",
+          "values": []
+        },
+        {
+          "Name": "id",
+          "values": [
+            {
+              "value": "21289"
+            }
+          ]
+        },
+        {
+          "Name": "level",
+          "values": []
+        },
+        {
+          "Name": "description",
+          "values": [
+            {
+              "value": " \n \nEscolher a Frente \u003cA\u003e e clicar no Item \u003cTB04\u003e.\n \n"
+            }
+          ]
+        },
+        {
+          "Name": "bpt-facet-type",
+          "values": [
+            {}
+          ]
+        },
+        {
+          "Name": "name",
+          "values": [
+            {
+              "value": "Tela Release 01"
+            }
+          ]
+        },
+        {
+          "Name": "has-linkage",
+          "values": [
+            {
+              "value": "N"
+            }
+          ]
+        },
+        {
+          "Name": "path",
+          "values": [
+            {}
+          ]
+        },
+        {
+          "Name": "step-order",
+          "values": [
+            {
+              "value": "2"
+            }
+          ]
+        },
+        {
+          "Name": "obj-id",
+          "values": []
+        },
+        {
+          "Name": "status",
+          "values": [
+            {
+              "value": "No Run"
+            }
+          ]
+        },
+        {
+          "Name": "attachment",
+          "values": [
+            {}
+          ]
+        },
+        {
+          "Name": "line-no",
+          "values": []
+        },
+        {
+          "Name": "test-id",
+          "values": [
+            {
+              "value": "115"
+            }
+          ]
+        },
+        {
+          "Name": "extended-reference",
+          "values": [
+            {}
+          ]
+        },
+        {
+          "Name": "parent-id",
+          "values": [
+            {
+              "value": "2027"
+            }
+          ]
+        },
+        {
+          "Name": "expected",
+          "values": [
+            {
+              "value": " \n \nO sistema exibe tela \\Release 01/ contendo subtítulo Frente \u003cA\u003e e nome do TB \u003cTB04\u003e com a lista de Produtos.\n \n"
+            }
+          ]
+        },
+        {
+          "Name": "bpta-condition",
+          "values": [
+            {}
+          ]
+        },
+        {
+          "Name": "tree-parent-id",
+          "values": []
+        },
+        {
+          "Name": "actual",
+          "values": [
+            {}
+          ]
+        },
+        {
+          "Name": "execution-time",
+          "values": [
+            {
+              "value": "07:26:24"
+            }
+          ]
+        },
+        {
+          "Name": "comp-subtype-name",
+          "values": [
+            {}
+          ]
+        }
+      ],
+      "Type": "run-step"
+    },
+    {
+      "Fields": [
+        {
+          "Name": "component-data",
+          "values": [
+            {}
+          ]
+        },
+        {
+          "Name": "has-picture",
+          "values": [
+            {
+              "value": "N"
+            }
+          ]
+        },
+        {
+          "Name": "bpt-path",
+          "values": [
+            {}
+          ]
+        },
+        {
+          "Name": "desstep-id",
+          "values": [
+            {
+              "value": "5688"
+            }
+          ]
+        },
+        {
+          "Name": "comp-status",
+          "values": [
+            {}
+          ]
+        },
+        {
+          "Name": "execution-date",
+          "values": [
+            {
+              "value": "2017-02-17"
+            }
+          ]
+        },
+        {
+          "Name": "rel-obj-id",
+          "values": []
+        },
+        {
+          "Name": "id",
+          "values": [
+            {
+              "value": "21290"
+            }
+          ]
+        },
+        {
+          "Name": "level",
+          "values": []
+        },
+        {
+          "Name": "description",
+          "values": [
+            {
+              "value": " \n \nClique no Produto /Parametrizar Produtos Elegíveis\\.\n \n"
+            }
+          ]
+        },
+        {
+          "Name": "bpt-facet-type",
+          "values": [
+            {}
+          ]
+        },
+        {
+          "Name": "name",
+          "values": [
+            {
+              "value": "Clique no Produto"
+            }
+          ]
+        },
+        {
+          "Name": "has-linkage",
+          "values": [
+            {
+              "value": "N"
+            }
+          ]
+        },
+        {
+          "Name": "path",
+          "values": [
+            {}
+          ]
+        },
+        {
+          "Name": "step-order",
+          "values": [
+            {
+              "value": "3"
+            }
+          ]
+        },
+        {
+          "Name": "obj-id",
+          "values": []
+        },
+        {
+          "Name": "status",
+          "values": [
+            {
+              "value": "No Run"
+            }
+          ]
+        },
+        {
+          "Name": "attachment",
+          "values": [
+            {}
+          ]
+        },
+        {
+          "Name": "line-no",
+          "values": []
+        },
+        {
+          "Name": "test-id",
+          "values": [
+            {
+              "value": "378"
+            }
+          ]
+        },
+        {
+          "Name": "extended-reference",
+          "values": [
+            {}
+          ]
+        },
+        {
+          "Name": "parent-id",
+          "values": [
+            {
+              "value": "2027"
+            }
+          ]
+        },
+        {
+          "Name": "expected",
+          "values": [
+            {
+              "value": " \n \nO sistema exibe na tela subtítulo Frente A - TB04 - Parametrizar Produtos Elegíveis, os campos [Banco], [Ferramenta], [MCC] e o botão /Consultar\\.\n \n"
+            }
+          ]
+        },
+        {
+          "Name": "bpta-condition",
+          "values": [
+            {}
+          ]
+        },
+        {
+          "Name": "tree-parent-id",
+          "values": []
+        },
+        {
+          "Name": "actual",
+          "values": [
+            {}
+          ]
+        },
+        {
+          "Name": "execution-time",
+          "values": [
+            {
+              "value": "07:26:24"
+            }
+          ]
+        },
+        {
+          "Name": "comp-subtype-name",
+          "values": [
+            {}
+          ]
+        }
+      ],
+      "Type": "run-step"
+    },
+    {
+      "Fields": [
+        {
+          "Name": "component-data",
+          "values": [
+            {}
+          ]
+        },
+        {
+          "Name": "has-picture",
+          "values": [
+            {
+              "value": "N"
+            }
+          ]
+        },
+        {
+          "Name": "bpt-path",
+          "values": [
+            {}
+          ]
+        },
+        {
+          "Name": "desstep-id",
+          "values": [
+            {
+              "value": "5689"
+            }
+          ]
+        },
+        {
+          "Name": "comp-status",
+          "values": [
+            {}
+          ]
+        },
+        {
+          "Name": "execution-date",
+          "values": [
+            {
+              "value": "2017-02-17"
+            }
+          ]
+        },
+        {
+          "Name": "rel-obj-id",
+          "values": []
+        },
+        {
+          "Name": "id",
+          "values": [
+            {
+              "value": "21291"
+            }
+          ]
+        },
+        {
+          "Name": "level",
+          "values": []
+        },
+        {
+          "Name": "description",
+          "values": [
+            {
+              "value": " \n \nNo campo [Banco] preencher Codigo do Banco: \u003c\"025\"\u003e\n \n"
+            }
+          ]
+        },
+        {
+          "Name": "bpt-facet-type",
+          "values": [
+            {}
+          ]
+        },
+        {
+          "Name": "name",
+          "values": [
+            {
+              "value": "Preechimento Banco"
+            }
+          ]
+        },
+        {
+          "Name": "has-linkage",
+          "values": [
+            {
+              "value": "N"
+            }
+          ]
+        },
+        {
+          "Name": "path",
+          "values": [
+            {}
+          ]
+        },
+        {
+          "Name": "step-order",
+          "values": [
+            {
+              "value": "4"
+            }
+          ]
+        },
+        {
+          "Name": "obj-id",
+          "values": []
+        },
+        {
+          "Name": "status",
+          "values": [
+            {
+              "value": "No Run"
+            }
+          ]
+        },
+        {
+          "Name": "attachment",
+          "values": [
+            {}
+          ]
+        },
+        {
+          "Name": "line-no",
+          "values": []
+        },
+        {
+          "Name": "test-id",
+          "values": [
+            {
+              "value": "378"
+            }
+          ]
+        },
+        {
+          "Name": "extended-reference",
+          "values": [
+            {}
+          ]
+        },
+        {
+          "Name": "parent-id",
+          "values": [
+            {
+              "value": "2027"
+            }
+          ]
+        },
+        {
+          "Name": "expected",
+          "values": [
+            {
+              "value": " \n \nO sistema exibe o Banco \u003c\"025\"\u003e.\n \n"
+            }
+          ]
+        },
+        {
+          "Name": "bpta-condition",
+          "values": [
+            {}
+          ]
+        },
+        {
+          "Name": "tree-parent-id",
+          "values": []
+        },
+        {
+          "Name": "actual",
+          "values": [
+            {}
+          ]
+        },
+        {
+          "Name": "execution-time",
+          "values": [
+            {
+              "value": "07:26:24"
+            }
+          ]
+        },
+        {
+          "Name": "comp-subtype-name",
+          "values": [
+            {}
+          ]
+        }
+      ],
+      "Type": "run-step"
+    },
+    {
+      "Fields": [
+        {
+          "Name": "component-data",
+          "values": [
+            {}
+          ]
+        },
+        {
+          "Name": "has-picture",
+          "values": [
+            {
+              "value": "N"
+            }
+          ]
+        },
+        {
+          "Name": "bpt-path",
+          "values": [
+            {}
+          ]
+        },
+        {
+          "Name": "desstep-id",
+          "values": [
+            {
+              "value": "5690"
+            }
+          ]
+        },
+        {
+          "Name": "comp-status",
+          "values": [
+            {}
+          ]
+        },
+        {
+          "Name": "execution-date",
+          "values": [
+            {
+              "value": "2017-02-17"
+            }
+          ]
+        },
+        {
+          "Name": "rel-obj-id",
+          "values": []
+        },
+        {
+          "Name": "id",
+          "values": [
+            {
+              "value": "21292"
+            }
+          ]
+        },
+        {
+          "Name": "level",
+          "values": []
+        },
+        {
+          "Name": "description",
+          "values": [
+            {
+              "value": " \n \nNo campo [Ferramenta] preencher codigo da ferramenta \u003c\"3\"\u003e\n \n"
+            }
+          ]
+        },
+        {
+          "Name": "bpt-facet-type",
+          "values": [
+            {}
+          ]
+        },
+        {
+          "Name": "name",
+          "values": [
+            {
+              "value": "Preenchimento Ferramenta"
+            }
+          ]
+        },
+        {
+          "Name": "has-linkage",
+          "values": [
+            {
+              "value": "N"
+            }
+          ]
+        },
+        {
+          "Name": "path",
+          "values": [
+            {}
+          ]
+        },
+        {
+          "Name": "step-order",
+          "values": [
+            {
+              "value": "5"
+            }
+          ]
+        },
+        {
+          "Name": "obj-id",
+          "values": []
+        },
+        {
+          "Name": "status",
+          "values": [
+            {
+              "value": "No Run"
+            }
+          ]
+        },
+        {
+          "Name": "attachment",
+          "values": [
+            {}
+          ]
+        },
+        {
+          "Name": "line-no",
+          "values": []
+        },
+        {
+          "Name": "test-id",
+          "values": [
+            {
+              "value": "378"
+            }
+          ]
+        },
+        {
+          "Name": "extended-reference",
+          "values": [
+            {}
+          ]
+        },
+        {
+          "Name": "parent-id",
+          "values": [
+            {
+              "value": "2027"
+            }
+          ]
+        },
+        {
+          "Name": "expected",
+          "values": [
+            {
+              "value": " \n \nO sistema exibe a Ferramenta \u003c\"3\"\u003e.\n \n"
+            }
+          ]
+        },
+        {
+          "Name": "bpta-condition",
+          "values": [
+            {}
+          ]
+        },
+        {
+          "Name": "tree-parent-id",
+          "values": []
+        },
+        {
+          "Name": "actual",
+          "values": [
+            {}
+          ]
+        },
+        {
+          "Name": "execution-time",
+          "values": [
+            {
+              "value": "07:26:24"
+            }
+          ]
+        },
+        {
+          "Name": "comp-subtype-name",
+          "values": [
+            {}
+          ]
+        }
+      ],
+      "Type": "run-step"
+    },
+    {
+      "Fields": [
+        {
+          "Name": "component-data",
+          "values": [
+            {}
+          ]
+        },
+        {
+          "Name": "has-picture",
+          "values": [
+            {
+              "value": "N"
+            }
+          ]
+        },
+        {
+          "Name": "bpt-path",
+          "values": [
+            {}
+          ]
+        },
+        {
+          "Name": "desstep-id",
+          "values": [
+            {
+              "value": "5691"
+            }
+          ]
+        },
+        {
+          "Name": "comp-status",
+          "values": [
+            {}
+          ]
+        },
+        {
+          "Name": "execution-date",
+          "values": [
+            {
+              "value": "2017-02-17"
+            }
+          ]
+        },
+        {
+          "Name": "rel-obj-id",
+          "values": []
+        },
+        {
+          "Name": "id",
+          "values": [
+            {
+              "value": "21293"
+            }
+          ]
+        },
+        {
+          "Name": "level",
+          "values": []
+        },
+        {
+          "Name": "description",
+          "values": [
+            {
+              "value": " \n \nNo campo [MCC] preencher \u003c\"5051\"\u003e\n \n"
+            }
+          ]
+        },
+        {
+          "Name": "bpt-facet-type",
+          "values": [
+            {}
+          ]
+        },
+        {
+          "Name": "name",
+          "values": [
+            {
+              "value": "Preenchimento MCC"
+            }
+          ]
+        },
+        {
+          "Name": "has-linkage",
+          "values": [
+            {
+              "value": "N"
+            }
+          ]
+        },
+        {
+          "Name": "path",
+          "values": [
+            {}
+          ]
+        },
+        {
+          "Name": "step-order",
+          "values": [
+            {
+              "value": "6"
+            }
+          ]
+        },
+        {
+          "Name": "obj-id",
+          "values": []
+        },
+        {
+          "Name": "status",
+          "values": [
+            {
+              "value": "No Run"
+            }
+          ]
+        },
+        {
+          "Name": "attachment",
+          "values": [
+            {}
+          ]
+        },
+        {
+          "Name": "line-no",
+          "values": []
+        },
+        {
+          "Name": "test-id",
+          "values": [
+            {
+              "value": "378"
+            }
+          ]
+        },
+        {
+          "Name": "extended-reference",
+          "values": [
+            {}
+          ]
+        },
+        {
+          "Name": "parent-id",
+          "values": [
+            {
+              "value": "2027"
+            }
+          ]
+        },
+        {
+          "Name": "expected",
+          "values": [
+            {
+              "value": " \n \nO sistema exibe o MCC \u003c\"5051\"\u003e.\n \n"
+            }
+          ]
+        },
+        {
+          "Name": "bpta-condition",
+          "values": [
+            {}
+          ]
+        },
+        {
+          "Name": "tree-parent-id",
+          "values": []
+        },
+        {
+          "Name": "actual",
+          "values": [
+            {}
+          ]
+        },
+        {
+          "Name": "execution-time",
+          "values": [
+            {
+              "value": "07:26:24"
+            }
+          ]
+        },
+        {
+          "Name": "comp-subtype-name",
+          "values": [
+            {}
+          ]
+        }
+      ],
+      "Type": "run-step"
+    },
+    {
+      "Fields": [
+        {
+          "Name": "component-data",
+          "values": [
+            {}
+          ]
+        },
+        {
+          "Name": "has-picture",
+          "values": [
+            {
+              "value": "N"
+            }
+          ]
+        },
+        {
+          "Name": "bpt-path",
+          "values": [
+            {}
+          ]
+        },
+        {
+          "Name": "desstep-id",
+          "values": [
+            {
+              "value": "5692"
+            }
+          ]
+        },
+        {
+          "Name": "comp-status",
+          "values": [
+            {}
+          ]
+        },
+        {
+          "Name": "execution-date",
+          "values": [
+            {
+              "value": "2017-02-17"
+            }
+          ]
+        },
+        {
+          "Name": "rel-obj-id",
+          "values": []
+        },
+        {
+          "Name": "id",
+          "values": [
+            {
+              "value": "21294"
+            }
+          ]
+        },
+        {
+          "Name": "level",
+          "values": []
+        },
+        {
+          "Name": "description",
+          "values": [
+            {
+              "value": " \n \nClique no botão /Consultar\\.\n \n"
+            }
+          ]
+        },
+        {
+          "Name": "bpt-facet-type",
+          "values": [
+            {}
+          ]
+        },
+        {
+          "Name": "name",
+          "values": [
+            {
+              "value": "Resultado da Consulta"
+            }
+          ]
+        },
+        {
+          "Name": "has-linkage",
+          "values": [
+            {
+              "value": "N"
+            }
+          ]
+        },
+        {
+          "Name": "path",
+          "values": [
+            {}
+          ]
+        },
+        {
+          "Name": "step-order",
+          "values": [
+            {
+              "value": "7"
+            }
+          ]
+        },
+        {
+          "Name": "obj-id",
+          "values": []
+        },
+        {
+          "Name": "status",
+          "values": [
+            {
+              "value": "No Run"
+            }
+          ]
+        },
+        {
+          "Name": "attachment",
+          "values": [
+            {}
+          ]
+        },
+        {
+          "Name": "line-no",
+          "values": []
+        },
+        {
+          "Name": "test-id",
+          "values": [
+            {
+              "value": "378"
+            }
+          ]
+        },
+        {
+          "Name": "extended-reference",
+          "values": [
+            {}
+          ]
+        },
+        {
+          "Name": "parent-id",
+          "values": [
+            {
+              "value": "2027"
+            }
+          ]
+        },
+        {
+          "Name": "expected",
+          "values": [
+            {
+              "value": " \n \nO sistema exibe a mensagem \u003c\"Consulta realizada com sucesso\". \n \n  \n   \u003e, e tabela contendo Codigo Grupo, Descricao Grupo e a lista de Produtos Associados.\n \n"
+            }
+          ]
+        },
+        {
+          "Name": "bpta-condition",
+          "values": [
+            {}
+          ]
+        },
+        {
+          "Name": "tree-parent-id",
+          "values": []
+        },
+        {
+          "Name": "actual",
+          "values": [
+            {}
+          ]
+        },
+        {
+          "Name": "execution-time",
+          "values": [
+            {
+              "value": "07:26:24"
+            }
+          ]
+        },
+        {
+          "Name": "comp-subtype-name",
+          "values": [
+            {}
+          ]
+        }
+      ],
+      "Type": "run-step"
+    },
+    {
+      "Fields": [
+        {
+          "Name": "component-data",
+          "values": [
+            {}
+          ]
+        },
+        {
+          "Name": "has-picture",
+          "values": [
+            {
+              "value": "N"
+            }
+          ]
+        },
+        {
+          "Name": "bpt-path",
+          "values": [
+            {}
+          ]
+        },
+        {
+          "Name": "desstep-id",
+          "values": [
+            {
+              "value": "5693"
+            }
+          ]
+        },
+        {
+          "Name": "comp-status",
+          "values": [
+            {}
+          ]
+        },
+        {
+          "Name": "execution-date",
+          "values": [
+            {
+              "value": "2017-02-17"
+            }
+          ]
+        },
+        {
+          "Name": "rel-obj-id",
+          "values": []
+        },
+        {
+          "Name": "id",
+          "values": [
+            {
+              "value": "21295"
+            }
+          ]
+        },
+        {
+          "Name": "level",
+          "values": []
+        },
+        {
+          "Name": "description",
+          "values": [
+            {
+              "value": " \n \nVerifique o campo [codigo de grupo] \u003c\"7\"\u003e\n \n"
+            }
+          ]
+        },
+        {
+          "Name": "bpt-facet-type",
+          "values": [
+            {}
+          ]
+        },
+        {
+          "Name": "name",
+          "values": [
+            {
+              "value": "Validar CA³digo do Grupo"
+            }
+          ]
+        },
+        {
+          "Name": "has-linkage",
+          "values": [
+            {
+              "value": "N"
+            }
+          ]
+        },
+        {
+          "Name": "path",
+          "values": [
+            {}
+          ]
+        },
+        {
+          "Name": "step-order",
+          "values": [
+            {
+              "value": "8"
+            }
+          ]
+        },
+        {
+          "Name": "obj-id",
+          "values": []
+        },
+        {
+          "Name": "status",
+          "values": [
+            {
+              "value": "No Run"
+            }
+          ]
+        },
+        {
+          "Name": "attachment",
+          "values": [
+            {}
+          ]
+        },
+        {
+          "Name": "line-no",
+          "values": []
+        },
+        {
+          "Name": "test-id",
+          "values": [
+            {
+              "value": "378"
+            }
+          ]
+        },
+        {
+          "Name": "extended-reference",
+          "values": [
+            {}
+          ]
+        },
+        {
+          "Name": "parent-id",
+          "values": [
+            {
+              "value": "2027"
+            }
+          ]
+        },
+        {
+          "Name": "expected",
+          "values": [
+            {
+              "value": " \n \nO sistema exibe o codigo do grupo conforme esperado\n \n"
+            }
+          ]
+        },
+        {
+          "Name": "bpta-condition",
+          "values": [
+            {}
+          ]
+        },
+        {
+          "Name": "tree-parent-id",
+          "values": []
+        },
+        {
+          "Name": "actual",
+          "values": [
+            {}
+          ]
+        },
+        {
+          "Name": "execution-time",
+          "values": [
+            {
+              "value": "07:26:24"
+            }
+          ]
+        },
+        {
+          "Name": "comp-subtype-name",
+          "values": [
+            {}
+          ]
+        }
+      ],
+      "Type": "run-step"
+    },
+    {
+      "Fields": [
+        {
+          "Name": "component-data",
+          "values": [
+            {}
+          ]
+        },
+        {
+          "Name": "has-picture",
+          "values": [
+            {
+              "value": "N"
+            }
+          ]
+        },
+        {
+          "Name": "bpt-path",
+          "values": [
+            {}
+          ]
+        },
+        {
+          "Name": "desstep-id",
+          "values": [
+            {
+              "value": "5694"
+            }
+          ]
+        },
+        {
+          "Name": "comp-status",
+          "values": [
+            {}
+          ]
+        },
+        {
+          "Name": "execution-date",
+          "values": [
+            {
+              "value": "2017-02-17"
+            }
+          ]
+        },
+        {
+          "Name": "rel-obj-id",
+          "values": []
+        },
+        {
+          "Name": "id",
+          "values": [
+            {
+              "value": "21296"
+            }
+          ]
+        },
+        {
+          "Name": "level",
+          "values": []
+        },
+        {
+          "Name": "description",
+          "values": [
+            {
+              "value": " \n \nVerifique o campo [descricao do grupo] \u003c\"Sem captura multipla\"\u003e\n \n"
+            }
+          ]
+        },
+        {
+          "Name": "bpt-facet-type",
+          "values": [
+            {}
+          ]
+        },
+        {
+          "Name": "name",
+          "values": [
+            {
+              "value": "Validar DescriA§A£o do Grupo"
+            }
+          ]
+        },
+        {
+          "Name": "has-linkage",
+          "values": [
+            {
+              "value": "N"
+            }
+          ]
+        },
+        {
+          "Name": "path",
+          "values": [
+            {}
+          ]
+        },
+        {
+          "Name": "step-order",
+          "values": [
+            {
+              "value": "9"
+            }
+          ]
+        },
+        {
+          "Name": "obj-id",
+          "values": []
+        },
+        {
+          "Name": "status",
+          "values": [
+            {
+              "value": "No Run"
+            }
+          ]
+        },
+        {
+          "Name": "attachment",
+          "values": [
+            {}
+          ]
+        },
+        {
+          "Name": "line-no",
+          "values": []
+        },
+        {
+          "Name": "test-id",
+          "values": [
+            {
+              "value": "378"
+            }
+          ]
+        },
+        {
+          "Name": "extended-reference",
+          "values": [
+            {}
+          ]
+        },
+        {
+          "Name": "parent-id",
+          "values": [
+            {
+              "value": "2027"
+            }
+          ]
+        },
+        {
+          "Name": "expected",
+          "values": [
+            {
+              "value": " \n \nO sistema exibe a descricao do grupo conforme esperado\n \n"
+            }
+          ]
+        },
+        {
+          "Name": "bpta-condition",
+          "values": [
+            {}
+          ]
+        },
+        {
+          "Name": "tree-parent-id",
+          "values": []
+        },
+        {
+          "Name": "actual",
+          "values": [
+            {}
+          ]
+        },
+        {
+          "Name": "execution-time",
+          "values": [
+            {
+              "value": "07:26:24"
+            }
+          ]
+        },
+        {
+          "Name": "comp-subtype-name",
+          "values": [
+            {}
+          ]
+        }
+      ],
+      "Type": "run-step"
+    },
+    {
+      "Fields": [
+        {
+          "Name": "component-data",
+          "values": [
+            {}
+          ]
+        },
+        {
+          "Name": "has-picture",
+          "values": [
+            {
+              "value": "N"
+            }
+          ]
+        },
+        {
+          "Name": "bpt-path",
+          "values": [
+            {}
+          ]
+        },
+        {
+          "Name": "desstep-id",
+          "values": [
+            {
+              "value": "5695"
+            }
+          ]
+        },
+        {
+          "Name": "comp-status",
+          "values": [
+            {}
+          ]
+        },
+        {
+          "Name": "execution-date",
+          "values": [
+            {
+              "value": "2017-02-17"
+            }
+          ]
+        },
+        {
+          "Name": "rel-obj-id",
+          "values": []
+        },
+        {
+          "Name": "id",
+          "values": [
+            {
+              "value": "21297"
+            }
+          ]
+        },
+        {
+          "Name": "level",
+          "values": []
+        },
+        {
+          "Name": "description",
+          "values": [
+            {
+              "value": " \n \nVerifique o campo [lista de produtos] \u003c\"9,10,11,12,19,20,21,33,40,41,43,64,70,71,72,80,380\"\u003e\n \n"
+            }
+          ]
+        },
+        {
+          "Name": "bpt-facet-type",
+          "values": [
+            {}
+          ]
+        },
+        {
+          "Name": "name",
+          "values": [
+            {
+              "value": "Validar a lista de produtos"
+            }
+          ]
+        },
+        {
+          "Name": "has-linkage",
+          "values": [
+            {
+              "value": "N"
+            }
+          ]
+        },
+        {
+          "Name": "path",
+          "values": [
+            {}
+          ]
+        },
+        {
+          "Name": "step-order",
+          "values": [
+            {
+              "value": "10"
+            }
+          ]
+        },
+        {
+          "Name": "obj-id",
+          "values": []
+        },
+        {
+          "Name": "status",
+          "values": [
+            {
+              "value": "No Run"
+            }
+          ]
+        },
+        {
+          "Name": "attachment",
+          "values": [
+            {}
+          ]
+        },
+        {
+          "Name": "line-no",
+          "values": []
+        },
+        {
+          "Name": "test-id",
+          "values": [
+            {
+              "value": "378"
+            }
+          ]
+        },
+        {
+          "Name": "extended-reference",
+          "values": [
+            {}
+          ]
+        },
+        {
+          "Name": "parent-id",
+          "values": [
+            {
+              "value": "2027"
+            }
+          ]
+        },
+        {
+          "Name": "expected",
+          "values": [
+            {
+              "value": " \n \nO sistema exibe a lista de produtos conforme esperado.\n \n"
+            }
+          ]
+        },
+        {
+          "Name": "bpta-condition",
+          "values": [
+            {}
+          ]
+        },
+        {
+          "Name": "tree-parent-id",
+          "values": []
+        },
+        {
+          "Name": "actual",
+          "values": [
+            {}
+          ]
+        },
+        {
+          "Name": "execution-time",
+          "values": [
+            {
+              "value": "07:26:24"
+            }
+          ]
+        },
+        {
+          "Name": "comp-subtype-name",
+          "values": [
+            {}
+          ]
+        }
+      ],
+      "Type": "run-step"
+    },
+    {
+      "Fields": [
+        {
+          "Name": "id",
+          "values": [
+            {
+              "value": "0"
+            }
+          ]
+        }
+      ],
+      "Type": "run-step"
+    }
+  ],
+  "TotalResults": 10
+}
