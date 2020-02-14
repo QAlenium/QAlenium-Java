@@ -1,4 +1,4 @@
-# ALM Integration Java
+# Framework de automação de testes em Java
 A powerful & easy to use Test Automation Framework
 
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=alm-integration-java&metric=alert_status)](https://sonarcloud.io/dashboard?id=alm-integration-java)
@@ -173,7 +173,7 @@ This repository's issue tracker is only for bugs and feature requests.
 
 <h1 id="license">License :page_facing_up:</h1>
 
-Copyright 2019 Gabriel Aguido Fraga
+Copyright 2020 QAlenium
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -188,10 +188,3 @@ See the License for the specific language governing permissions and
 limitations under the License.
 
 <br/>
-
-<h2 id="creators">Special Thanks :heart:</h2>
-
-These people rock!
-
-- [Bruno Oshiro](https://www.linkedin.com/in/bruno-oshiro-nakamato-634a02b7) - Who thusted me to develop this solution to his project
-- [Fernando Nascimento](https://www.linkedin.com/in/fernando-nascimento-89356542) - Who helped me developed and maintain this project
