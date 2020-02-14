@@ -2,7 +2,7 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>ALMIntegration</groupId>
+	<groupId>QAlenium-Java</groupId>
 	<artifactId>ALMIntegration-Java</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 
@@ -396,10 +396,9 @@
 		<jodatime-version>2.3</jodatime-version>
 		<maven-plugin-version>1.0.0</maven-plugin-version>
 		<junit-version>4.12</junit-version>
-		<sonar.projectKey>alm-integration-java</sonar.projectKey>
-		<sonar.organization>gabs</sonar.organization>
+		<sonar.projectKey>QAlenium_QAlenium-Java</sonar.projectKey>
+		<sonar.organization>qalenium</sonar.organization>
 		<sonar.host.url>https://sonarcloud.io</sonar.host.url>
-		<sonar.login>be22ef63aa97212cb571e1a237d286f374d716d8</sonar.login>
 	</properties>
 
 </project>
