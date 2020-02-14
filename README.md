@@ -7,7 +7,6 @@ A powerful & easy to use Test Automation Framework
 [![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=alm-integration-java&metric=reliability_rating)](https://sonarcloud.io/dashboard?id=alm-integration-java)
 [![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=alm-integration-java&metric=security_rating)](https://sonarcloud.io/dashboard?id=alm-integration-java)
 ![CircleCI](https://img.shields.io/circleci/build/github/kaapiel/ALMIntegration-Java/master)
-[![API](https://img.shields.io/badge/API-26%2B-green.svg?style=flat)](https://android-arsenal.com/api?level=26)
 
 ## Table of Contents
 1. [Quick Start](#quick-start)
