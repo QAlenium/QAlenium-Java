@@ -10,7 +10,7 @@ A powerful & easy to use Test Automation Framework
 
 ## Entre em nosso canal do Slack! https://qalenium.slack.com/
 
-## https://sonarcloud.io/dashboard?id=QAlenium_QAlenium-Java
+## Acompanhe as métricas de qualidade em https://sonarcloud.io/dashboard?id=QAlenium_QAlenium-Java
 
 ## Table of Contents
 1. [Quick Start](#quick-start)
