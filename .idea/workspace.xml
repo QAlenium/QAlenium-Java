@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="79663aca-fb85-41f0-ba0d-52315e61cc1c" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +21,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../d7/d7-automation-test" />
     <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -99,6 +101,10 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
+    <state x="743" y="297" width="424" height="479" key="FileChooserDialogImpl" timestamp="1581969095075">
+      <screen x="0" y="29" width="1920" height="1051" />
+    </state>
+    <state x="743" y="297" width="424" height="479" key="FileChooserDialogImpl/1920.0.1920.1080/0.29.1920.1051@0.29.1920.1051" timestamp="1581969095075" />
     <state x="643" y="366" key="com.intellij.ide.util.TipDialog" timestamp="1581968157461">
       <screen x="0" y="29" width="1920" height="1051" />
     </state>
