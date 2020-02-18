@@ -8,7 +8,7 @@ A powerful & easy to use Test Automation Framework
 [![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=QAlenium_QAlenium-Java&metric=security_rating)](https://sonarcloud.io/dashboard?id=QAlenium_QAlenium-Java)
 ![CircleCI](https://img.shields.io/circleci/build/github/QAlenium/QAlenium-Java/master)
 
-## Entre em nosso canal do Slack! https://qalenium.slack.com/
+## Entre em nosso canal do Slack! https://join.slack.com/t/qalenium/shared_invite/enQtOTU5MDY2MTQwOTY3LWYzNGFkMTU5MTFjMmMxYmUyNjkzY2RhYjViZDcxNWVmMzUyNjgxZWJmMGNjYTQ1MGRmMTQ2MGM4NDc5Y2E4MmQ
 
 ## Acompanhe as métricas de qualidade em https://sonarcloud.io/dashboard?id=QAlenium_QAlenium-Java
 
