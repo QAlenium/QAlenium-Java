@@ -12,6 +12,8 @@ A powerful & easy to use Test Automation Framework
 
 ## Acompanhe as métricas de qualidade em https://sonarcloud.io/dashboard?id=QAlenium_QAlenium-Java
 
+## Acompanhe a pipeline de integração contínua em https://circleci.com/gh/QAlenium/QAlenium-Java
+
 ## Table of Contents
 1. [Quick Start](#quick-start)
 1. [Example usage](#examples)
