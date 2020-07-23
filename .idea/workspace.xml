@@ -33,15 +33,180 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="79663aca-fb85-41f0-ba0d-52315e61cc1c" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/ALMFields.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/document.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/mainframeFields.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/s3270/cygwin/cygcrypto-0.9.8.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/s3270/cygwin/cygssl-0.9.8.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/s3270/cygwin/cygwin1.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/s3270/cygwin/s3270.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ALMIntegration.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ALMIntegration.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/alm/configuration/almModel/ALMSettings.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/alm/configuration/almModel/Settings.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/alm/configuration/envModel/Env.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/alm/configuration/envModel/EnvAPI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/alm/configuration/envModel/EnvCRDTB.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/alm/configuration/envModel/EnvDataBase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/alm/configuration/envModel/EnvMainFrame.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/alm/configuration/envModel/EnvREDES.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/alm/configuration/envModel/EnvSEC.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/alm/configuration/envModel/EnvServicos.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/alm/configuration/envModel/EnvSettings.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/alm/configuration/envModel/EnvTSO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/alm/configuration/envModel/EnvWeb.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/alm/configuration/envModel/EnvWebPortal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/alm/configuration/settingsModel/ALM.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/alm/configuration/settingsModel/Config.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/alm/configuration/settingsModel/Email.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/alm/configuration/settingsModel/Evidences.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/alm/configuration/settingsModel/Paths.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/alm/configuration/settingsModel/Project.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/alm/configuration/settingsModel/Settings.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/constants/Constants.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/constants/ConstantsServices.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/constants/ViewConstants.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/database/DataBaseTestExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/evidences/Commons.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/evidences/EvidencesWriter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/evidences/PDFConverter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/evidences/TestStep.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/evidences/TestStepTable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/evidences/Teste.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/evidences/content/EvidencesContentAutomaticStyles.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/evidences/content/EvidencesContentOfficeBodyElement.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/evidences/styles/EvidencesProperties.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/evidences/styles/EvidencesStyles.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/evidences/styles/EvidencesStylesOfficeAutomaticStyles.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/evidences/styles/EvidencesStylesOfficeMasterStyles.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/evidences/styles/EvidencesStylesOfficeStyles.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/evidences/styles/Hyperlink.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/evidences/styles/MainPageLayout.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/evidences/styles/MasterPages.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/evidences/styles/TableOfContents.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/evidences/styles/TableOfContentsStyles.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/exceptions/DataBaseExceptions.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/exceptions/MainframeExceptions.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/exceptions/MobileExceptions.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/exceptions/WebExceptions.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/exceptions/WebServicesExceptions2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/execution/CustomerTestCase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/execution/PlayTestCases.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/helper/CT.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/helper/DateHelper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/helper/Evidencias.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/helper/GeneralParser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/helper/LerArquivo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/helper/RG_CPF_CNPJ_Helper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/helper/ReportMain.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/helper/SendEmail.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/helper/SoapHelper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/helper/TestesServicos.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/helper/Utils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/helper/imageutils/ImageSpecifications.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/helper/imageutils/JSON2Image.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/helper/imageutils/Line.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/mainframe/SPRINTxx_ESTORIAxxxx_CT004.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/mainframe/SPRINTxx_ESTORIAxxxx_CT004.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/mainframe/net/sf/f3270/IntegrationTestBase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/mainframe/net/sf/f3270/impersonator/DataBlock.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/mainframe/net/sf/f3270/impersonator/DataByte.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/mainframe/net/sf/f3270/impersonator/TN3270Impersonator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/mainframe/net/sf/f3270/impersonator/TN3270ProxyRecorder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/mobile/SPRINTxx_ESTORIAxxxx_CT003.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/model/ServiceResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/model/WebEvidence.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/suits/SUITdatabase_SPRINTxx_ESTORIAxx.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/suits/SUITmainframe_SPRINTxx_ESTORIAxx.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/suits/SUITmobile_SPRINTxx_ESTORIAxx.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/suits/SUITweb_SPRINTxx_ESTORIAxx.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/suits/SUITwebservice_SPRINTxx_ESTORIAxx.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/testing/database/ConnectionFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/testing/mainframe/net/sf/f3270/FieldIdentifier.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/testing/mainframe/net/sf/f3270/MatchMode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/testing/mainframe/net/sf/f3270/Parameter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/testing/mainframe/net/sf/f3270/Terminal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/testing/mainframe/net/sf/f3270/TerminalObserver.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/testing/mainframe/net/sf/f3270/TerminalScreenToConsoleObserver.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/testing/mainframe/net/sf/f3270/TerminalWindow.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/testing/mainframe/net/sf/f3270/TerminalWindowIde.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/testing/mainframe/net/sf/f3270/TerminalWindowObserver.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/testing/mainframe/net/sf/f3270/TrailObserver.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/testing/mainframe/net/sf/f3270/ide/Command.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/testing/mainframe/net/sf/f3270/ide/Ide.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/testing/mainframe/org/h3270/host/AbstractScreen.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/testing/mainframe/org/h3270/host/Field.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/testing/mainframe/org/h3270/host/HostUnreachableException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/testing/mainframe/org/h3270/host/InputField.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/testing/mainframe/org/h3270/host/S3270.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/testing/mainframe/org/h3270/host/S3270Exception.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/testing/mainframe/org/h3270/host/S3270Screen.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/testing/mainframe/org/h3270/host/Screen.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/testing/mainframe/org/h3270/host/ScreenCharSequence.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/testing/mainframe/org/h3270/host/UnknownHostException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/testing/mainframe/org/h3270/render/Renderer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/testing/mainframe/org/h3270/render/TextRenderer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/testing/mobile/MobileTestCase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/testing/mobile/pageObject/AsusCalculator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/testing/tn3270/G120.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/testing/tn3270/K100CadastroInicializacao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/testing/tn3270/K100MainScreen.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/testing/tn3270/Mainframe.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/testing/tn3270/Mensagem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/testing/tn3270/ScreenFields.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/testing/tn3270/applications/IMainframeScreenFields.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/testing/tn3270/applications/MainframeFormScreens.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/testing/tn3270/applications/MainframeLoginFormScreens.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/testing/tn3270/applications/k100/K100.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/testing/tn3270/applications/k100/K100LoginAlertsPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/testing/tn3270/applications/k100/K100LoginPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/testing/tn3270/applications/k100/g110/G110.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/testing/tn3270/applications/k100/g120/G120.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/testing/tn3270/applications/tiv25cih/AT20.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/testing/tn3270/applications/tiv25cih/AT21.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/testing/tn3270/applications/tiv25cih/AT29.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/testing/tn3270/applications/tiv25cih/AU50.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/testing/tn3270/applications/tiv25cih/LoginAlertsPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/testing/tn3270/applications/tiv25cih/LoginPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/testing/tn3270/applications/tiv25e01/AE51StatusCRD.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/testing/tn3270/applications/tiv25e01/MainframeMessages.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/testing/tn3270/applications/tiv25e01/TIV25E01AT01.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/testing/tn3270/applications/tiv25e01/TIV25E01LoginAlertsPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/testing/tn3270/applications/tiv25e01/TIV25E01LoginPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/testing/tn3270/applications/tiv25e01/TIV25E01MN01.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/testing/tn3270/applications/tiv25e01/TIV25E01MN01AE50.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/testing/tn3270/applications/tiv25e01/TIV25E01MN01AE51.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/testing/tn3270/applications/tiv25e01/at02/Pagamento.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/testing/tn3270/applications/tiv25e01/at02/Produto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/testing/tn3270/applications/tiv25e01/at02/TIV25E01AT02.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/testing/tn3270/applications/tiv25e01/at02/TipoPagamento.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/testing/tn3270/applications/tiv25e01/atp9/DetalhesProduto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/testing/tn3270/applications/tiv25e01/atp9/TIV25E01ATP9.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/testing/tn3270/applications/tso/LoginPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/testing/tn3270/applications/tso/TSO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/testing/tn3270/applications/tso/TSOLoginAlertsPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/testing/tn3270/net/sf/f3270/FieldIdentifier.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/testing/tn3270/net/sf/f3270/MatchMode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/testing/tn3270/net/sf/f3270/Parameter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/testing/tn3270/net/sf/f3270/Terminal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/testing/tn3270/net/sf/f3270/TerminalObserver.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/testing/tn3270/net/sf/f3270/TerminalScreenToConsoleObserver.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/testing/tn3270/net/sf/f3270/TerminalWindow.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/testing/tn3270/net/sf/f3270/TerminalWindowIde.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/testing/tn3270/net/sf/f3270/TerminalWindowObserver.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/testing/tn3270/net/sf/f3270/TrailObserver.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/testing/tn3270/net/sf/f3270/ide/Command.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/testing/tn3270/net/sf/f3270/ide/Ide.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/testing/tn3270/org/h3270/host/AbstractScreen.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/testing/tn3270/org/h3270/host/Field.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/testing/tn3270/org/h3270/host/HostUnreachableException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/testing/tn3270/org/h3270/host/InputField.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/testing/tn3270/org/h3270/host/S3270.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/testing/tn3270/org/h3270/host/S3270Exception.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/testing/tn3270/org/h3270/host/S3270Screen.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/testing/tn3270/org/h3270/host/Screen.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/testing/tn3270/org/h3270/host/ScreenCharSequence.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/testing/tn3270/org/h3270/host/UnknownHostException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/testing/tn3270/org/h3270/render/Renderer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/testing/tn3270/org/h3270/render/TextRenderer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/testing/tn3270/resources/mainframeFields.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/testing/tn3270/screens/chooseapplication/ChooseApplicationScreen.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/testing/web/WebTestCase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/testing/web/pageObject/WebPageExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/web/SPRINTxx_ESTORIAxxxx_CT001.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/empresa/almintegration/webservices/SPRINTxx_ESTORIAxxxx_CT002.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -142,12 +307,13 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="743" y="297" width="424" height="479" key="FileChooserDialogImpl" timestamp="1581969095075">
