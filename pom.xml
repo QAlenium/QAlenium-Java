@@ -6,11 +6,4 @@
 	<artifactId>QAlenium-Java</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 
-	<properties>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<sonar.projectKey>QAlenium_QAlenium-Java</sonar.projectKey>
-		<sonar.organization>qalenium</sonar.organization>
-		<sonar.host.url>https://sonarcloud.io</sonar.host.url>
-	</properties>
-
 </project>
