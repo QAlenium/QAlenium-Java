@@ -28,8 +28,12 @@
 			<version>4.13</version>
 			<scope>compile</scope>
 		</dependency>
-
-
 	</dependencies>
+
+	<properties>
+		<sonar.projectKey>QAlenium_QAlenium-Java</sonar.projectKey>
+		<sonar.organization>qalenium</sonar.organization>
+		<sonar.host.url>https://sonarcloud.io</sonar.host.url>
+	</properties>
 
 </project>
