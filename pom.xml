@@ -6,15 +6,6 @@
 	<artifactId>QAlenium-Java</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 
-	<build>
-		<sourceDirectory>./src/main/java</sourceDirectory>
-
-	</build>
-
-	<dependencies>
-
-	</dependencies>
-
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<sonar.projectKey>QAlenium_QAlenium-Java</sonar.projectKey>
