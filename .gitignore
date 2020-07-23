@@ -3,6 +3,7 @@
 *.ear
 *.class
 .idea
+.idea/
 .pem
 
 # eclipse specific git ignore
