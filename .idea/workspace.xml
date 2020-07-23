@@ -2,8 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="79663aca-fb85-41f0-ba0d-52315e61cc1c" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/ALMFields.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/document.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/mainframeFields.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/s3270/cygwin/cygcrypto-0.9.8.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/s3270/cygwin/cygssl-0.9.8.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/s3270/cygwin/cygwin1.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/s3270/cygwin/s3270.exe" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,11 +24,12 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../d7/d7-automation-test" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$USER_HOME$/d7/d7-automation-test" />
     <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -99,6 +107,17 @@
       <updated>1504274702107</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="WindowStateProjectService">
     <state x="743" y="297" width="424" height="479" key="FileChooserDialogImpl" timestamp="1581969095075">
