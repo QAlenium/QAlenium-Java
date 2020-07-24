@@ -14,14 +14,10 @@ public class ApiTestsRule extends ExternalResource implements TestRule {
     public MethodTestRule methodTestRule = new MethodTestRule();
 
     @Override
-    protected void before() throws Throwable {
-        //before api tests
-        System.out.println();
+    protected void before() {
     }
 
     @Override
     protected void after() {
-        //after api tests
-        System.out.println();
     }
 }

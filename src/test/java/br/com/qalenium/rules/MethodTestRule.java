@@ -5,6 +5,7 @@ import br.com.qalenium.annotations.Mobile;
 import br.com.qalenium.annotations.StoryLink;
 import br.com.qalenium.annotations.TestDescription;
 import br.com.qalenium.annotations.Web;
+import br.com.qalenium.config.Utils;
 import org.junit.rules.ExternalResource;
 import org.junit.rules.RuleChain;
 import org.junit.rules.TestRule;
@@ -60,14 +61,6 @@ public class MethodTestRule extends ExternalResource implements TestRule {
             rules.add(new MobileTestsRule());
         }
 
-        return buildRuleChain(rules);
-    }
-
-    private RuleChain buildRuleChain(List<TestRule> rules) {
-        RuleChain ruleChain = RuleChain.emptyRuleChain();
-        for (TestRule testRule : rules) {
-            ruleChain = ruleChain.around(testRule);
-        }
-        return ruleChain;
+        return new Utils().buildRuleChain(rules);
     }
 }

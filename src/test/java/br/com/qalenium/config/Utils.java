@@ -1,7 +1,11 @@
 package br.com.qalenium.config;
 
+import org.junit.rules.RuleChain;
+import org.junit.rules.TestRule;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+
+import java.util.List;
 
 public class Utils {
 
@@ -15,6 +19,14 @@ public class Utils {
         }
 
         return new ChromeDriver();
+    }
+
+    public RuleChain buildRuleChain(List<TestRule> rules) {
+        RuleChain ruleChain = RuleChain.emptyRuleChain();
+        for (TestRule testRule : rules) {
+            ruleChain = ruleChain.around(testRule);
+        }
+        return ruleChain;
     }
 
 }

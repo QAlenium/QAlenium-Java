@@ -1,6 +1,7 @@
 package br.com.qalenium.rules;
 
 import br.com.qalenium.annotations.TestClassDescription;
+import br.com.qalenium.config.Utils;
 import org.junit.rules.ExternalResource;
 import org.junit.rules.RuleChain;
 import org.junit.rules.TestRule;
@@ -35,14 +36,6 @@ public class ClassTestRule extends ExternalResource implements TestRule {
             throw new RuntimeException("Your test class description is too short");
         }
 
-        return buildRuleChain(rules);
-    }
-
-    private RuleChain buildRuleChain(List<TestRule> rules) {
-        RuleChain ruleChain = RuleChain.emptyRuleChain();
-        for (TestRule testRule : rules) {
-            ruleChain = ruleChain.around(testRule);
-        }
-        return ruleChain;
+        return new Utils().buildRuleChain(rules);
     }
 }

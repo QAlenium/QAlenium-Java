@@ -14,14 +14,10 @@ public class WebTestsRule extends ExternalResource implements TestRule {
     public MethodTestRule methodTestRule = new MethodTestRule();
 
     @Override
-    protected void before() throws Throwable {
-        //before web tests
-        System.out.println();
+    protected void before() {
     }
 
     @Override
     protected void after() {
-        //after web tests
-        System.out.println();
     }
 }

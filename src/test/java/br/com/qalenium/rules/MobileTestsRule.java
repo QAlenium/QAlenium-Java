@@ -14,14 +14,10 @@ public class MobileTestsRule extends ExternalResource implements TestRule {
     public MethodTestRule methodTestRule = new MethodTestRule();
 
     @Override
-    protected void before() throws Throwable {
-        //before mobile tests
-        System.out.println();
+    protected void before() {
     }
 
     @Override
     protected void after() {
-        //after mobile tests
-        System.out.println();
     }
 }
