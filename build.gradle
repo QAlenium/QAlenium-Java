@@ -1,0 +1,28 @@
+plugins {
+    id 'java'
+    id "org.sonarqube" version "3.0"
+}
+
+sonarqube {
+    properties {
+        property "sonar.projectKey", "QAlenium_QAlenium-Java"
+        property "sonar.organization", "qalenium"
+        property "sonar.host.url", "https://sonarcloud.io"
+        property "sonar.login", "3ee72e1b494d9f5fd8e0c1fc7a9cd9f8a4cd96ee"
+    }
+}
+
+group 'br.com.qalenium'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.13'
+
+    compile group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '3.141.59'
+}
