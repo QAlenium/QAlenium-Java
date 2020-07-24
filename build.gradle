@@ -12,6 +12,10 @@ sonarqube {
     }
 }
 
+tasks.test {
+    useJUnitPlatform()
+}
+
 group 'br.com.qalenium'
 version '1.0-SNAPSHOT'
 

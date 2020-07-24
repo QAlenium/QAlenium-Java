@@ -1,26 +1,30 @@
 package br.com.qalenium.tests;
 
 import br.com.qalenium.annotations.Api;
-import br.com.qalenium.annotations.Description;
 import br.com.qalenium.annotations.Mobile;
 import br.com.qalenium.annotations.StoryLink;
+import br.com.qalenium.annotations.TestClassDescription;
+import br.com.qalenium.annotations.TestDescription;
 import br.com.qalenium.annotations.Web;
+import br.com.qalenium.rules.ApiTestsRule;
+import br.com.qalenium.rules.MobileTestsRule;
+import br.com.qalenium.rules.WebTestsRule;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.BeforeClass;
-import org.junit.Ignore;
 import org.junit.Test;
 
-public class TestTemplate {
+@TestClassDescription("This test class is supposed to assure something else")
+public class TestTemplate extends WebTestsRule /*extends ApiTestsRule*/ /*extends MobileTestsRule*/ {
 
     @BeforeClass
-    public void classSetup() {
+    public static void classSetup() {
 
     }
 
     @AfterClass
-    public void classTearDown() {
+    public static void classTearDown() {
 
     }
 
@@ -35,11 +39,11 @@ public class TestTemplate {
     }
 
     @Test
-    @Web
-    @Mobile
-    @Api
-    @Description("This test is supposed to assure something else")
-    @Ignore("In case you want exclude this test from some suit")
+    //@Api
+    //@Web
+    //@Mobile
+    @TestDescription("This test is supposed to assure something else")
+    //@Ignore("In case you want exclude this test from some suit")
     @StoryLink("In case we have a story link to associate with")
     public void testItself() {
 

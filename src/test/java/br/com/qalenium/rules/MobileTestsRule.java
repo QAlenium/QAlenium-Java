@@ -1,14 +1,27 @@
 package br.com.qalenium.rules;
 
-public class MobileTestsRule extends GenericTestRule {
+import org.junit.ClassRule;
+import org.junit.Rule;
+import org.junit.rules.ExternalResource;
+import org.junit.rules.TestRule;
+
+public class MobileTestsRule extends ExternalResource implements TestRule {
+
+    @ClassRule
+    public static ClassTestRule classTestRule = new ClassTestRule();
+
+    @Rule
+    public MethodTestRule methodTestRule = new MethodTestRule();
 
     @Override
     protected void before() throws Throwable {
         //before mobile tests
+        System.out.println();
     }
 
     @Override
     protected void after() {
         //after mobile tests
+        System.out.println();
     }
 }

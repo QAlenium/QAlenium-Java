@@ -9,6 +9,6 @@ import java.lang.annotation.Target;
 @Documented
 @Retention(RetentionPolicy.RUNTIME)
 @Target(value = {ElementType.TYPE, ElementType.METHOD})
-public @interface Description {
-    String value() default "This test is supposed to assure something";
+public @interface TestClassDescription {
+    String value() default "This class is supposed to assure something";
 }
