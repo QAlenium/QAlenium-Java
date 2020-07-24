@@ -5,6 +5,7 @@ import br.com.qalenium.annotations.Description;
 import br.com.qalenium.annotations.Mobile;
 import br.com.qalenium.annotations.StoryLink;
 import br.com.qalenium.annotations.Web;
+import br.com.qalenium.rules.ApiTestsRule;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
