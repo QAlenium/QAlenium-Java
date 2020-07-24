@@ -8,6 +8,7 @@ import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.BeforeClass;
+import org.junit.Ignore;
 import org.junit.Test;
 
 public class TestTemplate {
@@ -37,6 +38,7 @@ public class TestTemplate {
     @Mobile
     @Api
     @Description("This test is supposed to assure something else")
+    @Ignore("In case you want exclude this test from some suit")
     public void testItself() {
 
     }
