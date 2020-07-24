@@ -9,6 +9,7 @@
 build/
 gradle/
 *.iml
+*.DS_Store
 
 # eclipse specific git ignore
 *.pydevproject
