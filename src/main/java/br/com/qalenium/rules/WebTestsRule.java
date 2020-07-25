@@ -8,16 +8,18 @@ import org.junit.rules.TestRule;
 public class WebTestsRule extends ExternalResource implements TestRule {
 
     @ClassRule
-    public static ClassTestRule classTestRule = new ClassTestRule();
+    public static final ClassTestRule classTestRule = new ClassTestRule();
 
     @Rule
     public MethodTestRule methodTestRule = new MethodTestRule();
 
     @Override
     protected void before() {
+        //Method used before every web tests
     }
 
     @Override
     protected void after() {
+        //Method used after every web tests
     }
 }
