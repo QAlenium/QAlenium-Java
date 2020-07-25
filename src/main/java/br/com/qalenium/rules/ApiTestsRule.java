@@ -5,13 +5,7 @@ import org.junit.Rule;
 import org.junit.rules.ExternalResource;
 import org.junit.rules.TestRule;
 
-public class ApiTestsRule extends ExternalResource implements TestRule {
-
-    @ClassRule
-    public static final ClassTestRule classTestRule = new ClassTestRule();
-
-    @Rule
-    public MethodTestRule methodTestRule = new MethodTestRule();
+public class ApiTestsRule extends GenericTestsRule {
 
     @Override
     protected void before() {
@@ -20,6 +14,6 @@ public class ApiTestsRule extends ExternalResource implements TestRule {
 
     @Override
     protected void after() {
-        ////Method used after every api tests
+        //Method used after every api tests
     }
 }

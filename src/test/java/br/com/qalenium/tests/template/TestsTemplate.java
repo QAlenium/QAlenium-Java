@@ -5,6 +5,7 @@ import br.com.qalenium.annotations.TestClassDescription;
 import br.com.qalenium.annotations.TestDescription;
 import org.junit.After;
 import org.junit.AfterClass;
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Ignore;
@@ -42,5 +43,6 @@ public class TestsTemplate /*extends WebTestsRule*/ /*ApiTestsRule*/ /*MobileTes
     @TestDescription("This test is supposed to assure something else")
     public void testItself() {
         System.out.println("hello world!");
+        Assert.assertTrue(true);
     }
 }
