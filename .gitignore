@@ -7,7 +7,6 @@
 .pem
 .gradle
 build/
-gradle/
 *.iml
 *.DS_Store
 
