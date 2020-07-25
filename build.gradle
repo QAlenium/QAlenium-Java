@@ -12,10 +12,6 @@ sonarqube {
     }
 }
 
-tasks.test {
-    useJUnitPlatform()
-}
-
 group 'br.com.qalenium'
 version '1.0-SNAPSHOT'
 
@@ -26,7 +22,7 @@ repositories {
 }
 
 dependencies {
-    testCompile 'junit:junit:4.13'
-    compile 'junit:junit:4.13'
+    testCompile 'junit:junit:4.12'
+    compile 'junit:junit:4.12'
     compile group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '3.141.59'
 }
