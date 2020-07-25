@@ -8,7 +8,8 @@ sonarqube {
         property "sonar.projectKey", "QAlenium_QAlenium-Java"
         property "sonar.organization", "qalenium"
         property "sonar.host.url", "https://sonarcloud.io"
-        property "sonar.login", "3ee72e1b494d9f5fd8e0c1fc7a9cd9f8a4cd96ee"
+        property "sonar.login", "cd66a0f8510c2545bc793854625c1ba414dadb2c"
+        property "sonar.sources", "src/main"
     }
 }
 
