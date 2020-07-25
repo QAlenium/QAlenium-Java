@@ -18,10 +18,19 @@ version '1.0-SNAPSHOT'
 sourceCompatibility = 1.8
 
 repositories {
+    jcenter()
     mavenCentral()
 }
 
 dependencies {
     implementation 'junit:junit:4.12'
     implementation group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '3.141.59'
+}
+
+sourceSets {
+    main {
+        java {
+            srcDir 'src'
+        }
+    }
 }
