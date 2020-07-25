@@ -1,8 +1,8 @@
 package br.com.qalenium.tests;
 
-import br.com.qalenium.annotations.StoryLink;
 import br.com.qalenium.annotations.TestClassDescription;
 import br.com.qalenium.annotations.TestDescription;
+import br.com.qalenium.annotations.Web;
 import br.com.qalenium.rules.WebTestsRule;
 import org.junit.After;
 import org.junit.AfterClass;
@@ -11,7 +11,7 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 
 @TestClassDescription("This test class is supposed to assure something else")
-public class TestTemplate extends WebTestsRule /*extends ApiTestsRule*/ /*extends MobileTestsRule*/ {
+public class TestTemplate extends WebTestsRule {
 
     @BeforeClass
     public static void classSetup() {
@@ -34,12 +34,8 @@ public class TestTemplate extends WebTestsRule /*extends ApiTestsRule*/ /*extend
     }
 
     @Test
-    //@Api
-    //@Web
-    //@Mobile
+    @Web
     @TestDescription("This test is supposed to assure something else")
-    //@Ignore("In case you want exclude this test from some suit")
-    @StoryLink("In case we have a story link to associate with")
     public void testItself() {
 
     }
