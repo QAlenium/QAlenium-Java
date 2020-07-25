@@ -2,7 +2,6 @@ package br.com.qalenium.rules;
 
 import br.com.qalenium.annotations.Api;
 import br.com.qalenium.annotations.Mobile;
-import br.com.qalenium.annotations.StoryLink;
 import br.com.qalenium.annotations.TestDescription;
 import br.com.qalenium.annotations.Web;
 import br.com.qalenium.config.Utils;
@@ -33,19 +32,18 @@ public class MethodTestRule extends ExternalResource implements TestRule {
         Api api = description.getAnnotation(Api.class);
         Web web = description.getAnnotation(Web.class);
         Mobile mobile = description.getAnnotation(Mobile.class);
-        StoryLink storyLink = description.getAnnotation(StoryLink.class);
         TestDescription testDescription = description.getAnnotation(TestDescription.class);
 
         if (testDescription == null) {
-            throw new RuntimeException("The test method must have the @TestDescription annotation");
+            throw new IllegalArgumentException("The test method must have the @TestDescription annotation");
         } else if (testDescription.value().isEmpty()) {
-            throw new RuntimeException("The test method must have at least a description");
+            throw new IllegalArgumentException("The test method must have at least a description");
         } else if (testDescription.value().length() < 20) {
-            throw new RuntimeException("Your test description is too short");
+            throw new IllegalArgumentException("Your test description is too short");
         }
 
         if (api == null && web == null && mobile == null) {
-            throw new RuntimeException("You must have at least one of the following annotations in your test method: " +
+            throw new IllegalArgumentException("You must have at least one of the following annotations in your test method: " +
                     "@Api | @Web | @Mobile");
         }
 

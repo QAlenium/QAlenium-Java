@@ -29,11 +29,11 @@ public class ClassTestRule extends ExternalResource implements TestRule {
         TestClassDescription testClassDescription = description.getAnnotation(TestClassDescription.class);
 
         if (testClassDescription == null) {
-            throw new RuntimeException("The test class must have the @TestClassDescription annotation");
+            throw new IllegalArgumentException("The test class must have the @TestClassDescription annotation");
         } else if (testClassDescription.value().isEmpty()) {
-            throw new RuntimeException("The test class must have at least a description");
+            throw new IllegalArgumentException("The test class must have at least a description");
         } else if (testClassDescription.value().length() < 20) {
-            throw new RuntimeException("Your test class description is too short");
+            throw new IllegalArgumentException("Your test class description is too short");
         }
 
         return new Utils().buildRuleChain(rules);
