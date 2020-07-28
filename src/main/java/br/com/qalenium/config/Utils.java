@@ -13,9 +13,9 @@ public class Utils {
         String os = System.getProperty("os.name");
 
         if (os.contains("OS X")) {
-            System.setProperty("webdriver.chrome.driver", "./driver/mac/chromedriver");
+            System.setProperty("webdriver.chrome.driver", "./src/main/resources/driver/mac/chromedriver");
         } else {
-            System.setProperty("webdriver.chrome.driver", "./driver/windows/chromedriver.exe");
+            System.setProperty("webdriver.chrome.driver", "./src/main/resources/driver/windows/chromedriver.exe");
         }
 
         return new ChromeDriver();
