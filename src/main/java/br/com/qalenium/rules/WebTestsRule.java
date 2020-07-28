@@ -1,9 +1,6 @@
 package br.com.qalenium.rules;
 
-import org.junit.rules.ExternalResource;
-import org.junit.rules.TestRule;
-
-public class WebTestsRule extends ExternalResource implements TestRule {
+public class WebTestsRule extends GenericTestsRule {
 
     @Override
     protected void before() {
