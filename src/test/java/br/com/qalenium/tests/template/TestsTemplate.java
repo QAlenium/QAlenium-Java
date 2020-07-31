@@ -16,26 +16,23 @@ import org.openqa.selenium.interactions.Actions;
 @TestClassDescription("Garantir que a pagina inicial do google está funcionando")
 public class TestsTemplate extends WebTestsRule {
 
-
     WebDriver driver;
+
     @Before
     public void before() {
         Utils utils = new Utils();
         driver = utils.getDriver();
         driver.manage().window().maximize();
-        System.out.println("Antes");
     }
 
     @After
     public void after() {
         driver.quit();
-        System.out.println("Depois");
     }
 
     @Test
     @Web
     @TestDescription("Testar campo de pesquisa do google")
-    @StoryLink("Use this annotation in case you want to trace the story adding the link")
     public void pesquisaGoogle() {
         driver.get("https://www.google.com/");
         driver.findElement(By.name("q")).sendKeys("QAlenium");
