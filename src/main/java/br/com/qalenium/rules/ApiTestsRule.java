@@ -1,6 +1,8 @@
 package br.com.qalenium.rules;
 
-public class ApiTestsRule extends GenericTestsRule {
+import br.com.qalenium.interfaces.IApiTestsRule;
+
+public class ApiTestsRule extends GenericTestsRule implements IApiTestsRule {
 
     @Override
     protected void before() {
