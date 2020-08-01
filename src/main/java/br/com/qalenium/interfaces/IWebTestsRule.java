@@ -6,6 +6,4 @@ public interface IWebTestsRule {
 
     WebDriver getWebDriver();
 
-    void setWebDriver(WebDriver webDriver);
-
 }
