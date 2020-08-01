@@ -9,7 +9,7 @@ import java.util.List;
 
 public class Utils {
 
-    public WebDriver getDriver() {
+    public static WebDriver getDriver() {
         String os = System.getProperty("os.name");
 
         if (os.contains("OS X")) {
