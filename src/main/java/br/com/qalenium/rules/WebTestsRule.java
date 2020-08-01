@@ -6,19 +6,17 @@ import org.openqa.selenium.WebDriver;
 
 public class WebTestsRule extends GenericTestsRule implements IWebTestsRule {
 
-    private WebDriver webDriver;
+    private static final WebDriver webDriver = Utils.getDriver();
 
     @Override
     protected void before() {
-        Utils utils = new Utils();
-        webDriver = utils.getDriver();
         webDriver.manage().window().maximize();
-        setWebDriver(webDriver);
     }
 
     @Override
     protected void after() {
-        webDriver.quit();
+        getWebDriver().close();
+        getWebDriver().quit();
     }
 
     @Override
@@ -26,8 +24,4 @@ public class WebTestsRule extends GenericTestsRule implements IWebTestsRule {
         return webDriver;
     }
 
-    @Override
-    public void setWebDriver(WebDriver webDriver) {
-        this.webDriver = webDriver;
-    }
 }
