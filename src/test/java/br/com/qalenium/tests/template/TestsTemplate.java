@@ -15,15 +15,15 @@ import org.openqa.selenium.WebDriver;
 @TestClassDescription("Garantir que a pagina inicial do google está funcionando")
 public class TestsTemplate extends WebTestsRule {
 
-    WebDriver webDriver;
+    private WebDriver webDriver;
 
     @Before
-    public void before() {
+    public void testSetup() {
         webDriver = getWebDriver();
     }
 
     @After
-    public void after() {
+    public void testTearDown() {
     }
 
     @Test
@@ -36,7 +36,6 @@ public class TestsTemplate extends WebTestsRule {
 
         System.out.println("Pesquisa com sucesso");
         Assert.assertTrue(true);
-
     }
 }
 
