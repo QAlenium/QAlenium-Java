@@ -1,14 +1,27 @@
 package br.com.qalenium.rules;
 
-public class WebTestsRule extends GenericTestsRule {
+import br.com.qalenium.config.Utils;
+import br.com.qalenium.interfaces.IWebTestsRule;
+import org.openqa.selenium.WebDriver;
+
+public class WebTestsRule extends GenericTestsRule implements IWebTestsRule {
+
+    private static final WebDriver webDriver = Utils.getDriver();
 
     @Override
     protected void before() {
-        //Method used before every web tests
+        getWebDriver().manage().window().maximize();
     }
 
     @Override
     protected void after() {
-        //Method used after every web tests
+        getWebDriver().close();
+        getWebDriver().quit();
     }
+
+    @Override
+    public WebDriver getWebDriver() {
+        return webDriver;
+    }
+
 }

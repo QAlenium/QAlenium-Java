@@ -1,48 +1,44 @@
 package br.com.qalenium.tests.template;
 
-import br.com.qalenium.annotations.StoryLink;
 import br.com.qalenium.annotations.TestClassDescription;
 import br.com.qalenium.annotations.TestDescription;
+import br.com.qalenium.annotations.Web;
+import br.com.qalenium.rules.WebTestsRule;
 import org.junit.After;
-import org.junit.AfterClass;
 import org.junit.Assert;
 import org.junit.Before;
-import org.junit.BeforeClass;
-import org.junit.Ignore;
 import org.junit.Test;
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
 
-@TestClassDescription("This test class is supposed to assure something else")
-public class TestsTemplate /*extends WebTestsRule*/ /*ApiTestsRule*/ /*MobileTestsRule*/ {
+@TestClassDescription("Garantir que a pagina inicial do google está funcionando")
+public class TestsTemplate extends WebTestsRule {
 
-    @BeforeClass
-    public static void classSetup() {
-
-    }
-
-    @AfterClass
-    public static void classTearDown() {
-
-    }
+    private WebDriver webDriver;
 
     @Before
     public void testSetup() {
-
+        webDriver = getWebDriver();
     }
 
     @After
     public void testTearDown() {
-
     }
 
     @Test
-    //@Api
-    //@Web
-    //@Mobile
-    @Ignore("Use this annotation in case you want to ignore this test from runs")
-    @StoryLink("Use this annotation in case you want to trace the story adding the link")
-    @TestDescription("This test is supposed to assure something else")
-    public void testItself() {
-        System.out.println("hello world!");
+    @Web
+    @TestDescription("Testar campo de pesquisa do google")
+    public void pesquisaGoogle() {
+        webDriver.get("https://www.google.com/");
+        webDriver.findElement(By.name("q")).sendKeys("QAlenium");
+        webDriver.findElement(By.name("q")).sendKeys(Keys.ENTER);
+
+        System.out.println("Pesquisa com sucesso");
         Assert.assertTrue(true);
     }
 }
+
+
+
+

@@ -1,6 +1,8 @@
 package br.com.qalenium.rules;
 
-public class MobileTestsRule extends GenericTestsRule {
+import br.com.qalenium.interfaces.IMobileTestsRule;
+
+public class MobileTestsRule extends GenericTestsRule implements IMobileTestsRule {
 
     @Override
     protected void before() {
