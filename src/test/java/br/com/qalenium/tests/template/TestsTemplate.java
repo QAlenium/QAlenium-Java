@@ -1,25 +1,25 @@
 package br.com.qalenium.tests.template;
 
+import br.com.qalenium.annotations.Api;
+import br.com.qalenium.annotations.Mobile;
+import br.com.qalenium.annotations.StoryLink;
 import br.com.qalenium.annotations.TestClassDescription;
 import br.com.qalenium.annotations.TestDescription;
 import br.com.qalenium.annotations.Web;
-import br.com.qalenium.rules.WebTestsRule;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
-import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 
-@TestClassDescription("Garantir que a pagina inicial do google está funcionando")
-public class TestsTemplate extends WebTestsRule {
+@TestClassDescription("Assure something")
+public class TestsTemplate /*extends WebTestsRule*/ /*extends ApiTestsRule*/ /*extends MobileTestsRule*/ {
 
-    private WebDriver webDriver;
+    //private WebDriver webDriver = getWebDriver();
 
     @Before
     public void testSetup() {
-        webDriver = getWebDriver();
     }
 
     @After
@@ -28,13 +28,12 @@ public class TestsTemplate extends WebTestsRule {
 
     @Test
     @Web
-    @TestDescription("Testar campo de pesquisa do google")
-    public void pesquisaGoogle() {
-        webDriver.get("https://www.google.com/");
-        webDriver.findElement(By.name("q")).sendKeys("QAlenium");
-        webDriver.findElement(By.name("q")).sendKeys(Keys.ENTER);
-
-        System.out.println("Pesquisa com sucesso");
+    @Api
+    @Mobile
+    //@Ignore("Ignore running this tests")
+    @StoryLink("https://www.example.com/issues/1234")
+    @TestDescription("assure something else")
+    public void testTemplate() {
         Assert.assertTrue(true);
     }
 }
