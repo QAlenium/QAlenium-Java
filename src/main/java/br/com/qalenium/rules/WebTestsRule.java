@@ -10,7 +10,7 @@ public class WebTestsRule extends GenericTestsRule implements IWebTestsRule {
 
     @Override
     protected void before() {
-        webDriver.manage().window().maximize();
+        getWebDriver().manage().window().maximize();
     }
 
     @Override
