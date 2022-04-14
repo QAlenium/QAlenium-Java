@@ -19,13 +19,14 @@ version '1.0-SNAPSHOT'
 sourceCompatibility = 1.8
 
 repositories {
-    jcenter()
     mavenCentral()
 }
 
 dependencies {
-    implementation 'junit:junit:4.12'
+    implementation 'junit:junit:4.13.2'
     implementation group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '3.141.59'
+    implementation group: 'io.appium', name: 'java-client', version: '8.0.0'
+    implementation group: 'com.github.genium-framework', name: 'Appium-Support', version: '1.0.5'
 }
 
 sourceSets {
