@@ -14,15 +14,6 @@ jobs:
     working_directory: ~/project
     steps:
       - checkout
-      - flutter-orb/install_sdk_and_pub:
-          cache-version: machine
-          flutter_version: 2.10.3
-      - android/create-avd:
-          avd-name: Android-Emulator
-          install: true
-          system-image: system-images;android-29;default;x86
-      - android/start-emulator:
-          avd-name: Android-Emulator
       - run:
           name: Install Appium
           command: npm install appium@1.14.0
@@ -31,8 +22,14 @@ jobs:
           command: cd ; appium
           background: true
       - run:
-          name: Wait Until Appium Boot
-          command: sleep 30
+         name: Wait Until Appium Boot
+         command: sleep 30
+      - android/create-avd:
+          avd-name: Android-Emulator
+          install: true
+          system-image: system-images;android-29;default;x86
+      - android/start-emulator:
+          avd-name: Android-Emulator
       - run:
           name: Install APK
           command: adb install ~/project/resources/apk/app.apk
