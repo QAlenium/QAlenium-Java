@@ -15,6 +15,6 @@ jobs:
       - checkout
       - run:
           name: Some command
-          command: ls
+          command: cd ..
       - store_artifacts:
           path: ~/project/resources
