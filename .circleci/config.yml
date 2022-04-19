@@ -16,7 +16,7 @@ jobs:
       - checkout
       - run:
           name: Install Appium
-          command: npm install appium@1.14.0
+          command: npm install -g appium
       - run:
           name: Start Appium
           command: cd ; appium
