@@ -14,6 +14,9 @@ jobs:
     working_directory: ~/project
     steps:
       - checkout
+      - flutter-orb/install_sdk_and_pub:
+          cache-version: machine
+          flutter_version: 2.10.3
       - android/create-avd:
           avd-name: Android-Emulator
           install: true

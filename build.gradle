@@ -26,6 +26,3 @@ dependencies {
     implementation group: 'io.appium', name: 'java-client', version: '8.0.0'
     implementation group: 'com.github.genium-framework', name: 'Appium-Support', version: '1.0.5'
 }
-
-assembleDebugAndroidTest {
-}
