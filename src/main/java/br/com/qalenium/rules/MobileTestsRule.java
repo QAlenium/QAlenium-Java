@@ -5,6 +5,7 @@ import com.github.genium_framework.appium.support.server.AppiumServer;
 import com.github.genium_framework.server.ServerArguments;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.remote.MobileCapabilityType;
+import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
@@ -29,12 +30,13 @@ public class MobileTestsRule extends GenericTestsRule implements IMobileTestsRul
     }
 
     @Override
-    public AndroidDriver startEmulator() throws MalformedURLException {
+    public AndroidDriver startEmulator() throws IOException {
         DesiredCapabilities caps = new DesiredCapabilities();
-        caps.setCapability(MobileCapabilityType.PLATFORM_VERSION, "6.0");
-        caps.setCapability(MobileCapabilityType.PLATFORM_NAME,"Android");
-        caps.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 300);
-        caps.setCapability(MobileCapabilityType.DEVICE_NAME,"Emulator");
+        caps.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
+        caps.setCapability(MobileCapabilityType.PLATFORM_VERSION, "10");
+        caps.setCapability(MobileCapabilityType.DEVICE_NAME, "Pixel_2_API_R");
+        caps.setCapability(MobileCapabilityType.APP, "./resources/ApiDemos-debug.apk");
+        caps.setCapability(MobileCapabilityType.AUTOMATION_NAME, "UiAutomator2");
         return new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), caps);
     }
 

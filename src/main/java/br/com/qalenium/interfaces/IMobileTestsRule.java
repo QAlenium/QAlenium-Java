@@ -9,7 +9,7 @@ import java.net.MalformedURLException;
 public interface IMobileTestsRule {
 
     void closeEmulator() throws IOException;
-    AndroidDriver startEmulator() throws MalformedURLException;
+    AndroidDriver startEmulator() throws IOException;
     void closeSimulator() throws IOException;
     RemoteWebDriver startSimulator() throws IOException;
     void startServer();

@@ -18,16 +18,11 @@ public class MobileTest extends MobileTestsRule {
 
     @Before
     public void testSetup() throws IOException {
-        startServer();
         startEmulator();
-        startSimulator();
     }
 
     @After
-    public void testTearDown() throws IOException {
-        stopServer();
-        closeEmulator();
-        closeSimulator();
+    public void testTearDown() {
     }
 
     @Test
