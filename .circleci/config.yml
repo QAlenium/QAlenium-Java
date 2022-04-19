@@ -13,6 +13,9 @@ jobs:
     working_directory: ~/project
     steps:
       - checkout
+      - run:
+          name: Some command
+          command: ls
       - katalon-studio/run:
           version: latest
       - store_artifacts:
