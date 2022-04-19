@@ -11,14 +11,13 @@ import org.junit.Before;
 import org.junit.Test;
 
 import java.io.IOException;
-import java.net.MalformedURLException;
 
 @TestClassDescription("Assure that the login page is working")
 public class MobileTest extends MobileTestsRule {
 
     @Before
-    public void testSetup() throws IOException {
-        startEmulator();
+    public void testSetup() {
+
     }
 
     @After
