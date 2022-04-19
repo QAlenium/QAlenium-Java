@@ -14,7 +14,7 @@ jobs:
     steps:
       - checkout
       - android/create-avd:
-          avd-name: flutter
+          avd-name: Android-Emulator
           install: true
           system-image: system-images;android-29;default;x86
       - android/start-emulator:
