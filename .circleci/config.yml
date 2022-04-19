@@ -17,10 +17,7 @@ jobs:
           name: Some command
           command: ls
       - store_artifacts:
-          path: ~/project/build/app/outputs/flutter-apk
-  - katalon-studio/run:
-      version: latest
-
+          path: ~/project/resources
 
 workflows:
   main:
