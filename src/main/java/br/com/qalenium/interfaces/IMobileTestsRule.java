@@ -1,5 +1,7 @@
 package br.com.qalenium.interfaces;
 
+import io.appium.java_client.android.AndroidDriver;
+
 public interface IMobileTestsRule {
 
     void closeEmulator();
@@ -8,5 +10,6 @@ public interface IMobileTestsRule {
     void startSimulator();
     void startServer();
     void stopServer();
+    AndroidDriver setupAndroidCapabilities();
 
 }
