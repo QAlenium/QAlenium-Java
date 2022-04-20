@@ -34,7 +34,10 @@ jobs:
           name: Install APK
           command: adb install ~/project/resources/apk/app-debug.apk
       - run:
+          name: Generate jar
+          command: jar cf QAlenium.jar Play.java
+      - run:
           name: Run Tests
-          command: java -cp .:/usr/share/java/junit.jar org.junit.runner.JUnitCore MobileTest
+          command: java -jar QAlenium.jar
       - store_artifacts:
           path: ~/project/resources

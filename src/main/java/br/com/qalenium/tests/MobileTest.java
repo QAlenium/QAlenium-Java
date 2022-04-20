@@ -1,4 +1,4 @@
-package br.com.qalenium.tests.template;
+package br.com.qalenium.tests;
 
 import br.com.qalenium.annotations.Mobile;
 import br.com.qalenium.annotations.StoryLink;
