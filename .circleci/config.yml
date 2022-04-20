@@ -15,9 +15,9 @@ jobs:
       - checkout
       - run:
           name: Generate jar
-          command: jar cf QAlenium.jar ~/project/src/main/java/br/com/qalenium/execution/Play.java
+          command: jar cvfe QAlenium.jar br.com.qalenium.execution.Play *.class
       - run:
           name: Run Tests
-          command: java -cp QAlenium.jar br.com.qalenium.execution.Play
+          command: java -jar QAlenium.jar
       - store_artifacts:
           path: ~/project/resources
