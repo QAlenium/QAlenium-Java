@@ -6,10 +6,12 @@ import br.com.qalenium.annotations.TestClassDescription;
 import br.com.qalenium.annotations.TestDescription;
 import br.com.qalenium.rules.MobileTestsRule;
 import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.remote.MobileCapabilityType;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
+import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
 import java.io.IOException;
@@ -22,8 +24,9 @@ public class MobileTest extends MobileTestsRule {
     private AndroidDriver androidDriver;
     @Before
     public void testSetup() throws MalformedURLException {
-        DesiredCapabilities capabilities = new DesiredCapabilities();
-        androidDriver = new AndroidDriver(new URL("http://localhost:4723/wd/hub"), capabilities);
+        DesiredCapabilities caps = new DesiredCapabilities();
+        caps.setCapability(MobileCapabilityType.APP,"./resources/apk/app-debug.apk");
+        androidDriver = new AndroidDriver(new URL("http://localhost:4723/wd/hub"), caps);
     }
 
     @After
