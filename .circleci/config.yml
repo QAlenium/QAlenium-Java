@@ -14,6 +14,26 @@ jobs:
     steps:
       - checkout
       - run:
+          name: Install Appium
+          command: npm install -g appium
+      - run:
+          name: Start Appium
+          command: cd ; appium
+          background: true
+      - android/create-avd:
+          avd-name: Android-Emulator
+          install: true
+          system-image: system-images;android-29;default;x86
+      - android/start-emulator:
+          avd-name: Android-Emulator
+          post-emulator-launch-assemble-command: 'ls' #workaround to not run androidAssembleDebugTest task
+      - run:
+          name: Download apk
+          command: cd ~/project/resources/apk && { curl -L -O https://output.circle-artifacts.com/output/job/acb4a6fe-51cb-4bcc-976c-f9a2c047ea6e/artifacts/0/~/project/build/app/outputs/flutter-apk/app-debug.apk ; cd -; }
+      - run:
+          name: Install APK
+          command: adb install ~/project/resources/apk/app-debug.apk
+      - run:
           name: Run Tests
           command: ./gradlew runTests
       - store_artifacts:
