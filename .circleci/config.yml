@@ -14,10 +14,7 @@ jobs:
     steps:
       - checkout
       - run:
-          name: Generate jar
-          command: ./gradlew jar
-      - run:
           name: Run Tests
-          command: java -jar QAlenium.jar
+          command: ./gradlew runTests
       - store_artifacts:
           path: ~/project/resources

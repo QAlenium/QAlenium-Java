@@ -27,10 +27,8 @@ dependencies {
     implementation group: 'com.github.genium-framework', name: 'Appium-Support', version: '1.0.5'
 }
 
-jar {
-    manifest {
-        attributes(
-                'Main-Class': 'br.com.qalenium.execution.Play'
-        )
-    }
+task runTests(type: JavaExec) {
+    classpath sourceSets.test.runtimeClasspath
+    main = "br.com.qalenium.execution.Play"
+    //args = [""]
 }
