@@ -37,3 +37,12 @@ jobs:
           command: ./gradlew runTests
       - store_artifacts:
           path: ~/project/resources
+
+workflows:
+  build_and_test:
+    jobs:
+      - build:
+          filters:
+            branches:
+              only:
+                - main
