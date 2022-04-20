@@ -18,6 +18,6 @@ jobs:
           command: jar cf QAlenium.jar ~/project/src/main/java/br/com/qalenium/execution/Play.java
       - run:
           name: Run Tests
-          command: java -jar QAlenium.jar
+          command: java -cp QAlenium.jar br.com.qalenium.execution.Play
       - store_artifacts:
           path: ~/project/resources
