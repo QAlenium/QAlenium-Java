@@ -1,5 +1,9 @@
-# Framework de automação de testes em Java
+# Java Test Automation framework
 A powerful & easy to use Test Automation Framework
+
+<div align="center">
+  <img src="https://raw.githubusercontent.com/QAlenium/QAlenium-raw/main/qalenium_java/Untitled%20design.gif" width="600" height="300"/>
+</div>
 
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=QAlenium_QAlenium-Java&metric=alert_status)](https://sonarcloud.io/dashboard?id=QAlenium_QAlenium-Java)
 [![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=QAlenium_QAlenium-Java&metric=ncloc)](https://sonarcloud.io/dashboard?id=QAlenium_QAlenium-Java)
