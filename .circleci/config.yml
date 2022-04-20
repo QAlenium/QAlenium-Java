@@ -15,7 +15,7 @@ jobs:
       - checkout
       - run:
           name: Generate jar
-          command: jar cf QAlenium.jar ~/project/src/main/java/execution/Play.java
+          command: jar cf QAlenium.jar ~/project/src/main/java/br/com/qalenium/execution/Play.java
       - run:
           name: Run Tests
           command: java -jar QAlenium.jar
