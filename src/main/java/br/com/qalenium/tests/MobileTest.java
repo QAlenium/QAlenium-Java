@@ -24,7 +24,6 @@ import java.net.URL;
 
 @TestClassDescription("Assure that the login page is working")
 public class MobileTest extends MobileTestsRule {
-
     private AndroidDriver androidDriver;
     @Before
     public void testSetup() throws MalformedURLException {
@@ -32,6 +31,7 @@ public class MobileTest extends MobileTestsRule {
         caps.setCapability("appPackage", "com.qalenium.qalenium_mobile");
         caps.setCapability("appActivity", ".MainActivity");
         androidDriver = new AndroidDriver(new URL("http://localhost:4723/wd/hub"), caps);
+        androidDriver.startActivity(new Activity("com.qalenium.qalenium_mobile", ".MainActivity"));
     }
 
     @After
@@ -44,8 +44,6 @@ public class MobileTest extends MobileTestsRule {
     @StoryLink("https://www.example.com/issues/1234")
     @TestDescription("assure something else")
     public void login() throws IOException {
-        Activity activity = new Activity("com.qalenium.qalenium_mobile", ".MainActivity");
-        androidDriver.startActivity(activity);
         File screenshotAs = androidDriver.getScreenshotAs(OutputType.FILE);
         FileUtils.copyFile(screenshotAs, new File("./resources/screenshots"));
     }
