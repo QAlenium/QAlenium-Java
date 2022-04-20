@@ -29,10 +29,10 @@ jobs:
           post-emulator-launch-assemble-command: 'ls' #workaround to not run androidAssembleDebugTest task
       - run:
           name: Download apk
-          command: 'cd ~/project/resources/apk && { curl -L -O https://output.circle-artifacts.com/output/job/f1cac3d8-3d03-44e0-b642-b199730e44bb/artifacts/0/~/project/build/app/outputs/flutter-apk/app.apk ; cd -; }'
+          command: 'cd ~/project/resources/apk && { curl -L -O https://output.circle-artifacts.com/output/job/acb4a6fe-51cb-4bcc-976c-f9a2c047ea6e/artifacts/0/~/project/build/app/outputs/flutter-apk/app-debug.apk ; cd -; }'
       - run:
           name: Install APK
-          command: adb install ~/project/resources/apk/app.apk
+          command: adb install ~/project/resources/apk/app-debug.apk
       - run:
           name: Run Tests
           command: ls
