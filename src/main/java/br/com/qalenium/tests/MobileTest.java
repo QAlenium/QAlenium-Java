@@ -30,7 +30,6 @@ public class MobileTest extends MobileTestsRule {
         DesiredCapabilities caps = new DesiredCapabilities();
         caps.setCapability("appPackage", "com.qalenium.qalenium_mobile");
         caps.setCapability("appActivity", ".MainActivity");
-        caps.setCapability("activity", "");
         androidDriver = new AndroidDriver(new URL("http://localhost:4723/wd/hub"), caps);
     }
 
