@@ -28,7 +28,6 @@ public class MobileTest extends MobileTestsRule {
     @Before
     public void testSetup() throws MalformedURLException {
         DesiredCapabilities caps = new DesiredCapabilities();
-        caps.setCapability(MobileCapabilityType.APP,"~/project/resources/apk/app-debug.apk");
         androidDriver = new AndroidDriver(new URL("http://localhost:4723/wd/hub"), caps);
     }
 
