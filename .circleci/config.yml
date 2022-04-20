@@ -15,7 +15,7 @@ jobs:
       - checkout
       - run:
           name: Generate jar
-          command: ./graldew jar
+          command: ./gradlew jar
       - run:
           name: Run Tests
           command: java -jar QAlenium.jar
