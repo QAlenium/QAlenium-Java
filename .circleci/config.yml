@@ -15,7 +15,7 @@ jobs:
       - checkout
       - run:
           name: Generate jar
-          command: jar cvfe QAlenium.jar br.com.qalenium.execution.Play *.class
+          command: ./graldew jar
       - run:
           name: Run Tests
           command: java -jar QAlenium.jar
