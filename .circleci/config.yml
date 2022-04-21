@@ -47,7 +47,7 @@ jobs:
 workflows:
   build_and_test:
     jobs:
-      - build:
+      - build_and_test:
           filters:
             branches:
               only:
