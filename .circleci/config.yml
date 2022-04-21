@@ -44,53 +44,53 @@ jobs:
           event: pass
           custom: |
             {
-            "blocks": [
-              {
-                "type": "header",
-                "text": {
-                  "type": "plain_text",
-                  "text": "Job ${CIRCLE_JOB} Succeeded. :tada:",
-                  "emoji": true
-                }
-              },
-              {
-                "type": "divider"
-              },
-              {
-                "type": "section",
-                "fields": [
-                  {
-                    "type": "mrkdwn",
-                    "text": "*Project*: $CIRCLE_PROJECT_REPONAME"
-                  },
-                  {
-                    "type": "mrkdwn",
-                    "text": "*Branch*: $CIRCLE_BRANCH"
-                  },
-                  {
-                    "type": "mrkdwn",
-                    "text": "*Author*: $CIRCLE_USERNAME"
+              "blocks": [
+                {
+                  "type": "header",
+                  "text": {
+                    "type": "plain_text",
+                    "text": "Job ${CIRCLE_JOB} Succeeded. :tada:",
+                    "emoji": true
                   }
-                ]
-              },
-              {
-                "type": "divider"
-              },
-              {
-                "type": "actions",
-                "elements": [
-                  {
-                    "type": "button",
-                    "text": {
-                      "type": "plain_text",
-                      "text": "View Job"
+                },
+                {
+                  "type": "divider"
+                },
+                {
+                  "type": "section",
+                  "fields": [
+                    {
+                      "type": "mrkdwn",
+                      "text": "*Project*: $CIRCLE_PROJECT_REPONAME"
                     },
-                    "url": "https://${CIRCLE_BUILD_URL}"
-                  }
-                ]
-              }
-            ]
-        }
+                    {
+                      "type": "mrkdwn",
+                      "text": "*Branch*: $CIRCLE_BRANCH"
+                    },
+                    {
+                      "type": "mrkdwn",
+                      "text": "*Author*: $CIRCLE_USERNAME"
+                    }
+                  ]
+                },
+                {
+                  "type": "divider"
+                },
+                {
+                  "type": "actions",
+                  "elements": [
+                    {
+                      "type": "button",
+                      "text": {
+                        "type": "plain_text",
+                        "text": "View Job"
+                      },
+                      "url": "https://${CIRCLE_BUILD_URL}"
+                    }
+                  ]
+                }
+              ]
+            }
       - slack/notify:
           event: fail
           template: basic_fail_1
