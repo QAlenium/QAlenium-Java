@@ -91,9 +91,9 @@ jobs:
               }
             ]
         }
-  - slack/notify:
-      event: fail
-      template: basic_fail_1
+      - slack/notify:
+          event: fail
+          template: basic_fail_1
 
 workflows:
   build_and_test:
