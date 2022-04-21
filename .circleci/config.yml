@@ -2,7 +2,8 @@ version: 2.1
 
 orbs:
   android: circleci/android@2.0.0
-  # refer to this link to setup slack channels: https://github.com/CircleCI-Public/slack-orb/wiki/Setup
+  # Refer to this link to setup Slack channels: https://github.com/CircleCI-Public/slack-orb/wiki/Setup
+  # Setup slack app also:  https://github.com/CircleCI-Public/slack-orb/issues/207#issuecomment-731219733
   slack: circleci/slack@4.9.3
 
 jobs:
