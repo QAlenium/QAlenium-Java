@@ -7,7 +7,7 @@ orbs:
   slack: circleci/slack@4.9.3
 
 jobs:
-  build:
+  build_and_test:
     executor:
       name: android/android-machine
       resource-class: medium
@@ -15,8 +15,6 @@ jobs:
     working_directory: ~/project
     steps:
       - checkout
-  appium_server:
-    steps:
       - run:
           name: Install Appium
           command: npm install -g appium
@@ -24,8 +22,6 @@ jobs:
           name: Start Appium
           command: cd ; appium
           background: true
-  android_emulator:
-    steps:
       - android/create-avd:
           avd-name: Android-Emulator
           install: true
@@ -33,23 +29,17 @@ jobs:
       - android/start-emulator:
           avd-name: Android-Emulator
           post-emulator-launch-assemble-command: 'ls' #workaround to not run androidAssembleDebugTest task
-  manage_apk:
-    steps:
       - run:
           name: Download apk
           command: cd ~/project/resources/apk && { curl -L -O https://output.circle-artifacts.com/output/job/acb4a6fe-51cb-4bcc-976c-f9a2c047ea6e/artifacts/0/~/project/build/app/outputs/flutter-apk/app-debug.apk ; cd -; }
       - run:
           name: Install APK
           command: adb install ~/project/resources/apk/app-debug.apk
-  android_testing:
-    steps:
       - run:
           name: Run Tests
           command: ./gradlew runTests
       - store_artifacts:
           path: ~/project/resources
-  notifications:
-    steps:
       - slack/notify:
           event: always
           template: basic_success_1
