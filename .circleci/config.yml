@@ -45,7 +45,7 @@ jobs:
           template: basic_success_1
 
 workflows:
-  build:
+  build_and_test:
     jobs:
       - build:
           filters:
