@@ -16,11 +16,10 @@ jobs:
     working_directory: ~/project
     steps:
       - checkout
+      # Note that sonar scan is triggered ONLY if automatic analysis is turned OFF
       - run:
           name: SonarCloud Scan
           command: gradle build sonarqube
-      # Note that sonar scan is triggered ONLY if automatic analysis is turned OFF
-      - sonarcloud/scan
       - run:
           name: Install Appium
           command: npm install -g appium
