@@ -17,8 +17,8 @@ jobs:
     steps:
       - checkout
       - run:
-          name: Build
-          command: gradle build
+          name: SonarCloud Scan
+          command: gradle build sonarqube
       # Note that sonar scan is triggered ONLY if automatic analysis is turned OFF
       - sonarcloud/scan
       - run:
