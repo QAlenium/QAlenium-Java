@@ -19,7 +19,7 @@ jobs:
       # Note that sonar scan is triggered ONLY if automatic analysis is turned OFF
       - run:
           name: SonarCloud Scan
-          command: gradle build sonarqube"
+          command: gradle build sonarqube
       - sonarcloud/scan
       - run:
           name: Install Appium
