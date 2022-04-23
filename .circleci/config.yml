@@ -24,7 +24,7 @@ jobs:
   sonarcloud_scan:
     docker:
       - image: cimg/openjdk:17.0.2
-      working_directory: ~/project
+    working_directory: ~/project
     steps:
       - checkout
       # Note that sonar scan is triggered ONLY if automatic analysis is turned OFF
