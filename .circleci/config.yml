@@ -98,7 +98,7 @@ jobs:
             }
   performance_testing:
     docker:
-      image: justb4/jmeter:latest
+      - image: justb4/jmeter:latest
     working_directory: ~/project
     steps:
       - run:
