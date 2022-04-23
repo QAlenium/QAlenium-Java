@@ -16,6 +16,9 @@ jobs:
     working_directory: ~/project
     steps:
       - checkout
+      - run:
+          name: Build
+          command: gradle build
       # Note that sonar scan is triggered ONLY if automatic analysis is turned OFF
       - sonarcloud/scan
       - run:
