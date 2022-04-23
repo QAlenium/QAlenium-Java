@@ -8,18 +8,24 @@ orbs:
   sonarcloud: sonarsource/sonarcloud@1.0.3
 
 jobs:
-  build_and_test:
-    executor:
-      name: android/android-machine
-      resource-class: medium
-      tag: 2022.03.1
-    working_directory: ~/project
+  sonarcloud_scan:
+    docker:
+      - image: cimg/openjdk:17.0.2
+      working_directory: ~/project
     steps:
       - checkout
       # Note that sonar scan is triggered ONLY if automatic analysis is turned OFF
       - run:
           name: SonarCloud Scan
           command: gradle build sonarqube --info
+
+  android_testing:
+    executor:
+      name: android/android-machine
+      resource-class: medium
+      tag: 2022.03.1
+    working_directory: ~/project
+    steps:
       - run:
           name: Install Appium
           command: npm install -g appium
@@ -45,57 +51,69 @@ jobs:
           command: ./gradlew runTests
       - store_artifacts:
           path: ~/project/resources
-      - slack/notify:
-          event: always
-          custom: |
-            {
-              "blocks": [
-                {
-                  "type": "header",
-                  "text": {
-                    "type": "plain_text",
-                    "text": "Job ${CIRCLE_JOB} ${CCI_STATUS}.",
-                    "emoji": true
-                  }
-                },
-                {
-                  "type": "divider"
-                },
-                {
-                  "type": "section",
-                  "fields": [
-                    {
-                      "type": "mrkdwn",
-                      "text": "*Project*: $CIRCLE_PROJECT_REPONAME"
-                    },
-                    {
-                      "type": "mrkdwn",
-                      "text": "*Branch*: $CIRCLE_BRANCH"
-                    },
-                    {
-                      "type": "mrkdwn",
-                      "text": "*Author*: $CIRCLE_USERNAME"
-                    }
-                  ]
-                },
-                {
-                  "type": "divider"
-                },
-                {
-                  "type": "actions",
-                  "elements": [
-                    {
-                      "type": "button",
-                      "text": {
-                        "type": "plain_text",
-                        "text": "View Job"
-                      },
-                      "url": "${CIRCLE_BUILD_URL}"
-                    }
-                  ]
+  build:
+    docker:
+      - image: cimg/openjdk:17.0.2
+    working_directory: ~/project
+    steps:
+      - checkout
+      # Note that sonar scan is triggered ONLY if automatic analysis is turned OFF
+      - run:
+          name: SonarCloud Scan
+          command: gradle build --info
+
+  notification:
+    - slack/notify:
+        event: always
+        custom: |
+          {
+            "blocks": [
+              {
+                "type": "header",
+                "text": {
+                  "type": "plain_text",
+                  "text": "Job ${CIRCLE_JOB} ${CCI_STATUS}.",
+                  "emoji": true
                 }
-              ]
-            }
+              },
+              {
+                "type": "divider"
+              },
+              {
+                "type": "section",
+                "fields": [
+                  {
+                    "type": "mrkdwn",
+                    "text": "*Project*: $CIRCLE_PROJECT_REPONAME"
+                  },
+                  {
+                    "type": "mrkdwn",
+                    "text": "*Branch*: $CIRCLE_BRANCH"
+                  },
+                  {
+                    "type": "mrkdwn",
+                    "text": "*Author*: $CIRCLE_USERNAME"
+                  }
+                ]
+              },
+              {
+                "type": "divider"
+              },
+              {
+                "type": "actions",
+                "elements": [
+                  {
+                    "type": "button",
+                    "text": {
+                      "type": "plain_text",
+                      "text": "View Job"
+                    },
+                    "url": "${CIRCLE_BUILD_URL}"
+                  }
+                ]
+              }
+            ]
+          }
   performance_testing:
     docker:
       - image: justb4/jmeter:latest
@@ -111,14 +129,29 @@ jobs:
           path: ~/project/blazemeter
 
 workflows:
-  build_and_test:
+  qalenium_workflow:
     jobs:
-      - build_and_test:
+      - build:
           filters:
             branches:
               only:
                 - master
       - performance_testing:
+          filters:
+            branches:
+              only:
+                - master
+      - notification:
+          filters:
+            branches:
+              only:
+                - master
+      - android_testing:
+          filters:
+            branches:
+              only:
+                - master
+      - sonarcloud_scan:
           filters:
             branches:
               only:
