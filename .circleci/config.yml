@@ -118,3 +118,8 @@ workflows:
             branches:
               only:
                 - master
+      - performance_testing:
+          filters:
+            branches:
+              only:
+                - master
