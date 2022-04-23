@@ -1,5 +1,4 @@
 version: 2.1
-
 orbs:
   android: circleci/android@2.0.0
   # Refer to this link to setup Slack channels: https://github.com/CircleCI-Public/slack-orb/wiki/Setup
@@ -8,22 +7,11 @@ orbs:
   sonarcloud: sonarsource/sonarcloud@1.0.3
 
 jobs:
-  build:
-    docker:
-      - image: cimg/openjdk:17.0.2
-    working_directory: ~/project
-    steps:
-      - checkout
-      # Note that sonar scan is triggered ONLY if automatic analysis is turned OFF
-      - run:
-          name: SonarCloud Scan
-          command: gradle build --info
-      - store_artifacts:
-          path: ~/project/build
-
-  sonarcloud_scan:
-    docker:
-      - image: cimg/openjdk:17.0.2
+  qalenium_job:
+    executor:
+      name: android/android-machine
+      resource-class: medium
+      tag: 2022.03.1
     working_directory: ~/project
     steps:
       - checkout
@@ -31,16 +19,6 @@ jobs:
       - run:
           name: SonarCloud Scan
           command: gradle build sonarqube --info
-      - store_artifacts:
-          path: ~/project/sonarcloud
-
-  android_testing:
-    executor:
-      name: android/android-machine
-      resource-class: medium
-      tag: 2022.03.1
-    working_directory: ~/project
-    steps:
       - run:
           name: Install Appium
           command: npm install -g appium
@@ -66,26 +44,6 @@ jobs:
           command: ./gradlew runTests
       - store_artifacts:
           path: ~/project/resources
-
-  performance_testing:
-    docker:
-      - image: justb4/jmeter:latest
-    working_directory: ~/project
-    steps:
-      - run:
-          name: Make results directory
-          command: mkdir blazemeter
-      - run:
-          name: Run performance tests
-          command: jmeter -n -t sampleTest.jmx -l blazemeter/runResults.csv -e -o blazemeter
-      - store_artifacts:
-          path: ~/project/blazemeter
-
-  notification:
-    docker:
-      - image: cimg/openjdk:17.0.2
-    working_directory: ~/project
-    steps:
       - slack/notify:
           event: always
           custom: |
@@ -137,31 +95,10 @@ jobs:
                 }
               ]
             }
-
 workflows:
   qalenium_workflow:
     jobs:
-      - build:
-          filters:
-            branches:
-              only:
-                - master
-      - sonarcloud_scan:
-          filters:
-            branches:
-              only:
-                - master
-      - android_testing:
-          filters:
-            branches:
-              only:
-                - master
-      - performance_testing:
-          filters:
-            branches:
-              only:
-                - master
-      - notification:
+      - qalenium_job:
           filters:
             branches:
               only:
