@@ -100,6 +100,7 @@ jobs:
       - image: justb4/jmeter:latest
     working_directory: ~/project
     steps:
+      - checkout
       - run:
           name: Make results directory
           command: mkdir blazemeter
