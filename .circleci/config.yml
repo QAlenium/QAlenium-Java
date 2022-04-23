@@ -7,7 +7,7 @@ orbs:
   sonarcloud: sonarsource/sonarcloud@1.0.3
 
 jobs:
-  qalenium_functional_testing_job:
+  qalenium_java_functional_testing_job:
     executor:
       name: android/android-machine
       resource-class: medium
@@ -95,7 +95,7 @@ jobs:
                 }
               ]
             }
-  qalenium_performance_testing_job:
+  qalenium_java_performance_testing_job:
     docker:
       - image: justb4/jmeter:latest
     working_directory: ~/project
@@ -112,14 +112,14 @@ jobs:
           path: ~/project/blazemeter
 
 workflows:
-  qalenium_workflow:
+  qalenium_java_workflow:
     jobs:
-      - qalenium_functional_testing_job:
+      - qalenium_java_functional_testing_job:
           filters:
             branches:
               only:
                 - master
-      - qalenium_performance_testing_job:
+      - qalenium_java_performance_testing_job:
           filters:
             branches:
               only:
