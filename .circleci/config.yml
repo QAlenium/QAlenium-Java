@@ -53,7 +53,7 @@ jobs:
                   "type": "header",
                   "text": {
                     "type": "plain_text",
-                    "text": "Job ${CIRCLE_JOB} ${CCI_STATUS}.",
+                    "text": "Job ${CIRCLE_JOB} status: ${CCI_STATUS}.",
                     "emoji": true
                   }
                 },
@@ -95,6 +95,7 @@ jobs:
                 }
               ]
             }
+
 workflows:
   qalenium_workflow:
     jobs:
