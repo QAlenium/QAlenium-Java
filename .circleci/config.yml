@@ -8,6 +8,19 @@ orbs:
   sonarcloud: sonarsource/sonarcloud@1.0.3
 
 jobs:
+  build:
+    docker:
+      - image: cimg/openjdk:17.0.2
+    working_directory: ~/project
+    steps:
+      - checkout
+      # Note that sonar scan is triggered ONLY if automatic analysis is turned OFF
+      - run:
+          name: SonarCloud Scan
+          command: gradle build --info
+      - store_artifacts:
+          path: ~/project/build
+
   sonarcloud_scan:
     docker:
       - image: cimg/openjdk:17.0.2
@@ -18,6 +31,8 @@ jobs:
       - run:
           name: SonarCloud Scan
           command: gradle build sonarqube --info
+      - store_artifacts:
+          path: ~/project/sonarcloud
 
   android_testing:
     executor:
@@ -51,16 +66,20 @@ jobs:
           command: ./gradlew runTests
       - store_artifacts:
           path: ~/project/resources
-  build:
+
+  performance_testing:
     docker:
-      - image: cimg/openjdk:17.0.2
+      - image: justb4/jmeter:latest
     working_directory: ~/project
     steps:
-      - checkout
-      # Note that sonar scan is triggered ONLY if automatic analysis is turned OFF
       - run:
-          name: SonarCloud Scan
-          command: gradle build --info
+          name: Make results directory
+          command: mkdir blazemeter
+      - run:
+          name: Run performance tests
+          command: jmeter -n -t sampleTest.jmx -l blazemeter/runResults.csv -e -o blazemeter
+      - store_artifacts:
+          path: ~/project/blazemeter
 
   notification:
     - slack/notify:
@@ -114,24 +133,21 @@ jobs:
               }
             ]
           }
-  performance_testing:
-    docker:
-      - image: justb4/jmeter:latest
-    working_directory: ~/project
-    steps:
-      - run:
-          name: Make results directory
-          command: mkdir blazemeter
-      - run:
-          name: Run performance tests
-          command: jmeter -n -t sampleTest.jmx -l blazemeter/runResults.csv -e -o blazemeter
-      - store_artifacts:
-          path: ~/project/blazemeter
 
 workflows:
   qalenium_workflow:
     jobs:
       - build:
+          filters:
+            branches:
+              only:
+                - master
+      - sonarcloud_scan:
+          filters:
+            branches:
+              only:
+                - master
+      - android_testing:
           filters:
             branches:
               only:
@@ -142,16 +158,6 @@ workflows:
               only:
                 - master
       - notification:
-          filters:
-            branches:
-              only:
-                - master
-      - android_testing:
-          filters:
-            branches:
-              only:
-                - master
-      - sonarcloud_scan:
           filters:
             branches:
               only:
