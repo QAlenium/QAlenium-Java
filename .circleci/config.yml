@@ -96,6 +96,18 @@ jobs:
                 }
               ]
             }
+  performance_testing:
+    docker:
+      image: justb4/jmeter:latest
+    steps:
+      - run:
+          name: Make results directory
+          command: mkdir blazemeter
+      - run:
+          name: Run performance tests
+          command: jmeter -n -t sampleTest.jmx -l blazemeter/runResults.csv -e -o blazemeter
+      - store_artifacts:
+          path: ~/project/blazemeter
 
 workflows:
   build_and_test:
