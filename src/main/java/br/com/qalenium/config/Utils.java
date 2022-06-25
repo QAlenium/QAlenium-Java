@@ -13,9 +13,11 @@ public class Utils {
         String os = System.getProperty("os.name");
 
         if (os.contains("OS X")) {
-            System.setProperty("webdriver.chrome.driver", "./src/main/resources/driver/mac/chromedriver");
+            System.setProperty("webdriver.chrome.driver", "./src/main/resources/drivers/mac/chromedriver");
+        } else if (os.contains("Windows")) {
+            System.setProperty("webdriver.chrome.driver", "./src/main/resources/drivers/windows/chromedriver.exe");
         } else {
-            System.setProperty("webdriver.chrome.driver", "./src/main/resources/driver/windows/chromedriver.exe");
+            System.setProperty("webdriver.chrome.driver", "./src/main/resources/drivers/linux/chromedriver");
         }
 
         return new ChromeDriver();

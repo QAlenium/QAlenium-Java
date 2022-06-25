@@ -21,10 +21,16 @@ repositories {
 }
 
 dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
     implementation 'junit:junit:4.13.2'
-    implementation group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '3.141.59'
-    implementation group: 'io.appium', name: 'java-client', version: '8.0.0'
+    implementation group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '4.3.0'
+    implementation group: 'io.appium', name: 'java-client', version: '8.1.1'
     implementation group: 'com.github.genium-framework', name: 'Appium-Support', version: '1.0.5'
+}
+
+test {
+    useJUnitPlatform()
 }
 
 task runTests(type: JavaExec) {
