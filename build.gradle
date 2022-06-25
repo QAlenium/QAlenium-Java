@@ -23,6 +23,7 @@ repositories {
 dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+    implementation 'io.rest-assured:rest-assured:5.1.1'
     implementation 'junit:junit:4.13.2'
     implementation group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '4.3.0'
     implementation group: 'io.appium', name: 'java-client', version: '8.1.1'
