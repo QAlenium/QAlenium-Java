@@ -21,21 +21,14 @@ repositories {
 }
 
 dependencies {
-    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
-    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
     implementation 'io.rest-assured:rest-assured:5.1.1'
-    implementation 'junit:junit:4.13.2'
     implementation group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '4.3.0'
     implementation group: 'io.appium', name: 'java-client', version: '8.1.1'
     implementation group: 'com.github.genium-framework', name: 'Appium-Support', version: '1.0.5'
-}
 
-test {
-    useJUnitPlatform()
-}
-
-task runTests(type: JavaExec) {
-    classpath sourceSets.test.runtimeClasspath
-    main = "br.com.qalenium.execution.Play"
-    //args = [""]
+    implementation group: 'info.cukes', name: 'cucumber-java', version: '1.2.6', ext: 'pom'
+    implementation group: 'info.cukes', name: 'cucumber-jvm-deps', version: '1.0.5'
+    implementation group: 'info.cukes', name: 'cucumber-testng', version: '1.2.6', ext: 'pom'
+    testImplementation group: 'org.testng', name: 'testng', version: '7.6.1'
+    implementation group: 'net.masterthought', name: 'cucumber-reporting', version: '5.7.2'
 }
